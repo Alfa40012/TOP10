@@ -134,6 +134,182 @@
             font-weight: 600;
         }
         
+        /* قسم الإحصائيات */
+        .stats-section {
+            margin: 40px 0;
+            padding: 40px;
+            background: var(--dark-bg);
+            border-radius: 25px;
+            text-align: center;
+            border: 1px solid rgba(200, 161, 90, 0.2);
+            box-shadow: var(--card-shadow);
+        }
+        
+        .stats-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .stat-item {
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .stat-label {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        /* قسم تعليقات العملاء */
+        .testimonials-section {
+            margin: 60px 0;
+        }
+        
+        .testimonials-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .testimonial-card {
+            background: var(--dark-bg);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(200, 161, 90, 0.3);
+            transition: var(--transition);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+            margin-left: 15px;
+        }
+        
+        .testimonial-info h4 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .testimonial-info .country {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-rating {
+            color: #ffc107;
+            margin-top: 5px;
+        }
+        
+        .testimonial-text {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+            font-style: italic;
+            border-right: 3px solid var(--primary-color);
+            padding-right: 15px;
+        }
+        
+        /* قسم وسائل الدفع */
+        .payment-section {
+            margin: 60px 0;
+            padding: 40px;
+            background: var(--dark-bg);
+            border-radius: 25px;
+            text-align: center;
+            border: 2px solid rgba(200, 161, 90, 0.3);
+        }
+        
+        .payment-title {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        
+        .payment-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .payment-method {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            width: 140px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .payment-method:hover {
+            transform: translateY(-5px);
+            background: rgba(200, 161, 90, 0.1);
+        }
+        
+        .payment-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .apple-pay { color: #000; }
+        .visa { color: #1a1f71; }
+        .mastercard { color: #eb001b; }
+        .paypal { color: #003087; }
+        .cash { color: #28a745; }
+        
+        .payment-note {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+        
         /* تحسين قسم Hero */
         .hero {
             margin: 40px 0;
@@ -233,7 +409,7 @@
             margin-left: 8px;
         }
         
-        /* قسم Why مع محتوى نصي غني للSEO */
+        /* قسم Why */
         .section {
             margin: 60px 0;
         }
@@ -290,32 +466,6 @@
             color: var(--primary-color);
         }
         
-        /* قسم FAQ للSEO */
-        .faq-section {
-            background: var(--dark-bg);
-            border-radius: 20px;
-            padding: 40px;
-            margin: 60px 0;
-        }
-        
-        .faq-item {
-            margin-bottom: 25px;
-            border-bottom: 1px solid rgba(200, 161, 90, 0.2);
-            padding-bottom: 25px;
-        }
-        
-        .faq-question {
-            color: var(--primary-color);
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .faq-answer {
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.7;
-        }
-        
         /* قسم الصور المصغرة في الأسفل */
         .images-section {
             margin: 60px 0 30px;
@@ -367,46 +517,6 @@
             padding: 10px;
             text-align: center;
             font-weight: 600;
-            color: var(--primary-color);
-        }
-        
-        /* قسم Special */
-        .special {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 50px 0;
-        }
-        
-        .special a {
-            text-decoration: none;
-        }
-        
-        .card {
-            padding: 25px;
-            border-radius: 20px;
-            background: var(--dark-bg);
-            border: 2px solid var(--primary-color);
-            font-weight: 800;
-            color: #fff;
-            text-align: center;
-            transition: var(--transition);
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .card:hover {
-            background: rgba(200, 161, 90, 0.1);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(200, 161, 90, 0.3);
-        }
-        
-        .card i {
-            font-size: 2.5rem;
             color: var(--primary-color);
         }
         
@@ -468,18 +578,6 @@
             font-size: 1.3rem;
         }
         
-        /* Breadcrumb للSEO */
-        .breadcrumb {
-            margin: 20px 0;
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
-        
-        .breadcrumb a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
         /* تحسينات للهواتف */
         @media (max-width: 768px) {
             .container {
@@ -493,6 +591,28 @@
             .logo-img {
                 width: 120px;
                 height: 120px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .stat-number {
+                font-size: 2.8rem;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .payment-methods {
+                gap: 15px;
+            }
+            
+            .payment-method {
+                width: 120px;
+                height: 90px;
             }
             
             .hero {
@@ -518,19 +638,15 @@
                 padding: 12px 20px;
                 font-size: 0.9rem;
             }
-            
-            .images-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .faq-section {
-                padding: 25px 20px;
-            }
         }
         
         /* تحسينات للشاشات الكبيرة */
         @media (min-width: 1200px) {
             .logo-text h1 {
+                font-size: 4rem;
+            }
+            
+            .stat-number {
                 font-size: 4rem;
             }
         }
@@ -539,11 +655,6 @@
 
 <body>
     <div class="container">
-        <!-- Breadcrumb للSEO -->
-        <div class="breadcrumb">
-            <a href="#">الرئيسية</a> &gt; <span>TOP10IPTV - أفضل سيرفر IPTV</span>
-        </div>
-        
         <!-- اللوجو الضخم -->
         <div class="main-logo">
             <div class="logo-container">
@@ -552,6 +663,29 @@
             <div class="logo-text">
                 <h1>TOP 10 IPTV</h1>
                 <div class="tagline">رقم 1 في خدمات البث التلفزيوني المميز</div>
+            </div>
+        </div>
+
+        <!-- قسم الإحصائيات -->
+        <div class="stats-section">
+            <h2 class="stats-title">أرقامنا تتحدث عنا</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="clientCount">0</div>
+                    <div class="stat-label">عميل راضي</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="channelCount">0</div>
+                    <div class="stat-label">قناة تلفزيونية</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="supportCount">0</div>
+                    <div class="stat-label">ساعة دعم فني</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="countryCount">0</div>
+                    <div class="stat-label">دولة حول العالم</div>
+                </div>
             </div>
         </div>
 
@@ -584,7 +718,132 @@
             </a>
         </div>
 
-        <!-- قسم Why مع محتوى نصي غني للSEO -->
+        <!-- قسم تعليقات العملاء -->
+        <div class="testimonials-section">
+            <h2 class="testimonials-title">ماذا يقول عملاؤنا عنا؟</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="مروان" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>مروان</h4>
+                            <div class="country">إيطاليا</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "أنا مروان من إيطاليا، السيرفر رائع جداً ومستقر. القنوات الرياضية تعمل بدون تقطيع حتى في أوقات الذروة. شكراً لفريق الدعم الفني الرائع!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="يارا" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>يارا</h4>
+                            <div class="country">السعودية</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "أنا يارا من السعودية، أفضل تعامل وفريق دعم محترف. السيرفر شغال بدون مشاكل من سنة، والأفلام العربية محدثة باستمرار. أنصح به بشدة!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="أحمد" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>أحمد</h4>
+                            <div class="country">الكويت</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "جربت أكثر من سيرفر IPTV ولكن TOP10IPTV هو الأفضل من حيث الاستقرار وجودة الصورة. القنوات الرياضية الكويتية تعمل بشكل ممتاز."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="سارة" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>سارة</h4>
+                            <div class="country">الإمارات</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "المسلسلات التركية محدثة يومياً وبدون إعلانات، وهذا ما كنت أبحث عنه. فريق الدعم سريع الاستجابة ويحل أي مشكلة خلال دقائق."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم وسائل الدفع -->
+        <div class="payment-section">
+            <h2 class="payment-title">وسائل الدفع المتاحة</h2>
+            <p class="payment-subtitle">نوفر لك多种 وسائل دفع آمنة وسهلة للاشتراك في خدمتنا</p>
+            
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <i class="fab fa-apple-pay payment-icon apple-pay"></i>
+                    <span>Apple Pay</span>
+                </div>
+                
+                <div class="payment-method">
+                    <i class="fab fa-cc-visa payment-icon visa"></i>
+                    <span>Visa</span>
+                </div>
+                
+                <div class="payment-method">
+                    <i class="fab fa-cc-mastercard payment-icon mastercard"></i>
+                    <span>MasterCard</span>
+                </div>
+                
+                <div class="payment-method">
+                    <i class="fab fa-cc-paypal payment-icon paypal"></i>
+                    <span>PayPal</span>
+                </div>
+                
+                <div class="payment-method">
+                    <i class="fas fa-money-bill-wave payment-icon cash"></i>
+                    <span>الدفع عند الاستلام</span>
+                </div>
+            </div>
+            
+            <p class="payment-note">جميع عمليات الدفع مؤمنة ومعتمدة عالمياً. يمكنك اختيار وسيلة الدفع المناسبة لك.</p>
+            
+            <a class="btn" href="https://wa.me/201098256570?text=أريد معلومات عن وسائل الدفع المتاحة" target="_blank" style="margin-top: 30px;">
+                <i class="fas fa-credit-card"></i> استفسر عن وسائل الدفع
+            </a>
+        </div>
+
+        <!-- قسم Why -->
         <section class="section">
             <h2 class="section-title">لماذا تختار TOP10IPTV؟</h2>
             <div class="why-grid">
@@ -610,57 +869,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- قسم FAQ للSEO -->
-        <div class="faq-section">
-            <h2 class="section-title">أسئلة شائعة عن خدمة TOP10IPTV</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">ما هي خدمة TOP10IPTV؟</div>
-                <div class="faq-answer">
-                    TOP10IPTV هو أفضل سيرفر IPTV في العالم العربي يوخدم خدمة بث تلفزيوني عبر الإنترنت تشمل آلاف القنوات التلفزيونية العالمية والعربية، القنوات الرياضية المشفرة، الأفلام، المسلسلات، والقنوات الوثائقية.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">ما هي الأجهزة المتوافقة مع TOP10IPTV؟</div>
-                <div class="faq-answer">
-                    خدمتنا تعمل على جميع أجهزة SUNPLUS (CEMEX، NEWGOLD، MARVEL، TAIGAR، MIDIAX، 4MAN، VIPER6060)، بالإضافة إلى أجهزة Android، Smart TV، iPhone، iPad، وأجهزة الكمبيوتر.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">هل يوجد تجربة مجانية لخدمة TOP10IPTV؟</div>
-                <div class="faq-answer">
-                    نعم، نوفر تجربة مجانية لمدة 24 ساعة لجميع العملاء الجدد. يمكنك طلبها عبر التواصل معنا على الواتساب.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">كيف يمكنني الاشتراك في TOP10IPTV؟</div>
-                <div class="faq-answer">
-                    يمكنك الاشتراك عن طريق التواصل معنا مباشرة على الواتساب <strong>+201098256570</strong> وسيقوم فريق الدعم الفني بمساعدتك في عملية الاشتراك والتثبيت.
-                </div>
-            </div>
-        </div>
-
-        <!-- قسم Special -->
-        <div class="special">
-            <a href="https://wa.me/201098256570?text=💎 أريد عرض خاص للموزعين والمحلات" target="_blank">
-                <div class="card">
-                    <i class="fas fa-gem"></i>
-                    <div>عروض خاصة للموزعين والمحلات</div>
-                    <p>خصومات حصرية لتجار الجملة والموزعين</p>
-                </div>
-            </a>
-            <a href="https://wa.me/201098256570?text=🛠️ أريد دعم فني لأجهزة SUNPLUS" target="_blank">
-                <div class="card">
-                    <i class="fas fa-tools"></i>
-                    <div>دعم فني متخصص لأجهزة SUNPLUS</div>
-                    <p>فريق دعم متخصص في أجهزة الاستقبال</p>
-                </div>
-            </a>
-        </div>
 
         <!-- قسم الصور المصغرة في الأسفل -->
         <div class="images-section">
@@ -712,8 +920,38 @@
     </a>
 
     <script>
-        // تحسين تحميل الصور
+        // عداد الإحصائيات المتحرك
+        function animateCounter(id, start, end, duration) {
+            let obj = document.getElementById(id);
+            let startTime = null;
+            
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                obj.innerHTML = value.toLocaleString();
+                
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+            
+            window.requestAnimationFrame(step);
+        }
+        
+        // بدء العدادات عند التمرير
+        function startCounters() {
+            animateCounter('clientCount', 0, 12500, 2000);
+            animateCounter('channelCount', 0, 15000, 2500);
+            animateCounter('supportCount', 0, 24, 1500);
+            animateCounter('countryCount', 0, 35, 1800);
+        }
+        
+        // بدء العدادات عند تحميل الصفحة
         document.addEventListener('DOMContentLoaded', function() {
+            // بدء العدادات بعد تأخير بسيط
+            setTimeout(startCounters, 500);
+            
             // إضافة تأثير للصور عند التمرير
             const observerOptions = {
                 threshold: 0.1,
@@ -730,7 +968,7 @@
             }, observerOptions);
             
             // تطبيق التأثير على العناصر
-            const animatedElements = document.querySelectorAll('.why-box, .card, .image-item, .feature-box');
+            const animatedElements = document.querySelectorAll('.why-box, .testimonial-card, .payment-method, .image-item, .feature-box');
             animatedElements.forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(20px)';
@@ -738,17 +976,12 @@
                 observer.observe(el);
             });
             
-            // إضافة حدث النقر على الأسئلة الشائعة
-            document.querySelectorAll('.faq-question').forEach(question => {
-                question.addEventListener('click', function() {
-                    const answer = this.nextElementSibling;
-                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            // إضافة حدث النقر على وسائل الدفع
+            document.querySelectorAll('.payment-method').forEach(method => {
+                method.addEventListener('click', function() {
+                    const methodName = this.querySelector('span').textContent;
+                    window.open(`https://wa.me/201098256570?text=أريد الاستفسار عن طريقة الدفع ${methodName}`, '_blank');
                 });
-            });
-            
-            // إظهار جميع الإجابات في البداية
-            document.querySelectorAll('.faq-answer').forEach(answer => {
-                answer.style.display = 'block';
             });
             
             // تأثير للوجو عند التمرير
@@ -763,15 +996,28 @@
                 }
             });
             
-            // تحسين SEO: تتبع النقرات على الأزرار
-            document.querySelectorAll('a').forEach(link => {
-                if (link.href.includes('wa.me')) {
-                    link.addEventListener('click', function() {
-                        // هنا يمكنك إضافة كود Google Analytics
-                        console.log('تم النقر على رابط الواتساب:', this.href);
-                    });
+            // تحديث عداد الزوار بشكل عشوائي (محاكاة)
+            function updateVisitorCounter() {
+                const now = new Date();
+                const hours = now.getHours();
+                
+                // زيادة الزوار في أوقات الذروة
+                let increment = 3;
+                if (hours >= 18 || hours <= 2) {
+                    increment = 7; // وقت الذروة المسائي
+                } else if (hours >= 12 && hours < 15) {
+                    increment = 5; // وقت الظهيرة
                 }
-            });
+                
+                const currentCount = parseInt(document.getElementById('clientCount').innerText.replace(/,/g, ''));
+                const newCount = currentCount + increment;
+                
+                // تحديث العداد بشكل سلس
+                animateCounter('clientCount', currentCount, newCount, 1000);
+            }
+            
+            // تحديث عداد الزوار كل 30 ثانية (محاكاة)
+            setInterval(updateVisitorCounter, 30000);
         });
     </script>
 </body>
