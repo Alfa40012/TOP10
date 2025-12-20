@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOP10IPTV – أكبر مكتبة رياضية وترفيهية بالعالم</title>
     
-    <meta name="description" content="TOP10IPTV أفضل سيرفر IPTV في العالم يوفر قنوات رياضية مشفرة، أفلام ومسلسلات محدثة يوميًا، يعمل على جميع أجهزة الصن بلص مع دعم فني 24 ساعة.">
+    <!-- تحسينات SEO متقدمة -->
+    <title>TOP10IPTV - أفضل سيرفر IPTV في مصر والعالم العربي | قنوات رياضية مشفرة</title>
+    
+    <meta name="description" content="اشترك الآن في TOP10IPTV - أكبر مكتبة رياضية وترفيهية في العالم. قنوات beIN Sports، دوري أبطال أوروبا، أفلام ومسلسلات حصرية، يعمل على جميع أجهزة SUNPLUS. دعم فني 24/7.">
+    
+    <meta name="keywords" content="IPTV, سيرفر IPTV, قنوات رياضية, beIN Sports, قنوات مشفرة, أفلام عربية, مسلسلات تركية, سيرفر شغال, اشتراك IPTV, سون بلاس, أجهزة استقبال">
+    
+    <!-- Open Graph للمشاركة على وسائل التواصل -->
+    <meta property="og:title" content="TOP10IPTV - أفضل سيرفر IPTV في العالم العربي">
+    <meta property="og:description" content="أكبر مكتبة رياضية وترفيهية، قنوات beIN Sports، دوري أبطال أوروبا، أفلام ومسلسلات حصرية.">
+    <meta property="og:image" content="https://g.top4top.io/p_3641r1o041.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Structured Data لتحسين ظهور البحث -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "TOP10IPTV",
+      "description": "أفضل سيرفر IPTV في العالم العربي يقدم قنوات رياضية مشفرة وأفلام ومسلسلات حصرية",
+      "areaServed": "مصر، السعودية، الإمارات، الكويت، قطر، العالم العربي",
+      "serviceType": "خدمة بث تلفزيوني عبر الإنترنت",
+      "provider": {
+        "@type": "Organization",
+        "name": "TOP10IPTV"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
     
     <!-- تحسين أداء الخطوط -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +50,7 @@
             --primary-color: #c8a15a;
             --primary-dark: #a88440;
             --secondary-color: #3a2818;
-            --dark-bg: rgba(0, 0, 0, 0.75);
+            --dark-bg: rgba(0, 0, 0, 0.8);
             --light-bg: rgba(255, 255, 255, 0.05);
             --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             --transition: all 0.3s ease;
@@ -48,118 +78,60 @@
             padding: 20px;
         }
         
-        /* تحسين تأثير الـ Shimmer */
-        .shimmer {
-            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
-            background-size: 200% 100%;
-            background-clip: text;
+        /* اللوجو الضخم */
+        .main-logo {
+            text-align: center;
+            margin: 20px 0 40px;
+            position: relative;
+        }
+        
+        .logo-container {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .logo-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 25px;
+            border: 5px solid var(--primary-color);
+            box-shadow: 0 0 40px rgba(200, 161, 90, 0.8);
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .logo-img:hover {
+            transform: scale(1.05) rotate(5deg);
+            box-shadow: 0 0 60px rgba(200, 161, 90, 1);
+        }
+        
+        .logo-text {
+            margin-top: 20px;
+        }
+        
+        .logo-text h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--primary-color), #fff2c1, var(--primary-color));
+            background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: shine 3s infinite;
-            display: inline-block;
+            background-clip: text;
+            animation: shine 3s linear infinite;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
         
         @keyframes shine {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
+            to {
+                background-position: 200% center;
+            }
         }
         
-        /* تحسين الهيدر */
-        .header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 15px 0;
-            margin-bottom: 20px;
-        }
-        
-        .header img {
-            width: 80px;
-            height: 80px;
-            border-radius: 20px;
-            border: 3px solid var(--primary-color);
-            box-shadow: 0 0 20px rgba(200, 161, 90, 0.7);
-            object-fit: cover;
-            transition: var(--transition);
-        }
-        
-        .header img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(200, 161, 90, 0.9);
-        }
-        
-        .header h1 {
-            font-size: 2.2rem;
-            font-weight: 900;
-            margin: 0;
-        }
-        
-        .header-subtitle {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 1rem;
-            margin-top: 5px;
-        }
-        
-        /* تحسين قسم الصور العلوي */
-        .image-section {
-            margin: 40px 0;
-        }
-        
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        
-        .image-frame {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            background: var(--dark-bg);
-            border: 2px solid transparent;
-            box-shadow: var(--card-shadow);
-            transition: var(--transition);
-            height: 250px;
-        }
-        
-        .image-frame:hover {
-            border-color: var(--primary-color);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(200, 161, 90, 0.4);
-        }
-        
-        .image-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-        
-        .image-frame:hover img {
-            transform: scale(1.03);
-        }
-        
-        /* مؤشر تحميل للصور */
-        .image-frame::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, #2a1c12, #3a2818, #2a1c12);
-            background-size: 200% 100%;
-            animation: loading 1.5s infinite;
-            z-index: 1;
-        }
-        
-        .image-frame.loaded::before {
-            display: none;
-        }
-        
-        @keyframes loading {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
+        .logo-text .tagline {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 10px;
+            font-weight: 600;
         }
         
         /* تحسين قسم Hero */
@@ -172,20 +144,32 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(200, 161, 90, 0.2);
             box-shadow: var(--card-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
         }
         
         .hero h2 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 20px;
             color: var(--primary-color);
         }
         
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             line-height: 1.8;
             margin-bottom: 25px;
             color: rgba(255, 255, 255, 0.9);
-            max-width: 800px;
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -219,40 +203,44 @@
         
         .feature-box i {
             color: var(--primary-color);
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         
-        /* تحسين الأزرار */
+        /* الأزرار */
         .btn {
             display: inline-block;
-            padding: 16px 40px;
+            padding: 18px 45px;
             border-radius: 50px;
-            font-weight: 800;
+            font-weight: 900;
             background: linear-gradient(135deg, var(--primary-color), #e6c98c);
             color: #000;
             text-decoration: none;
-            box-shadow: 0 5px 20px rgba(200, 161, 90, 0.5);
+            box-shadow: 0 5px 25px rgba(200, 161, 90, 0.6);
             transition: var(--transition);
             border: none;
             cursor: pointer;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-top: 10px;
         }
         
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(200, 161, 90, 0.7);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 35px rgba(200, 161, 90, 0.8);
             background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
         }
         
-        /* قسم Why */
+        .btn i {
+            margin-left: 8px;
+        }
+        
+        /* قسم Why مع محتوى نصي غني للSEO */
         .section {
             margin: 60px 0;
         }
         
         .section-title {
             text-align: center;
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 30px;
             color: var(--primary-color);
             position: relative;
@@ -265,15 +253,15 @@
             bottom: 0;
             right: 50%;
             transform: translateX(50%);
-            width: 100px;
-            height: 3px;
+            width: 150px;
+            height: 4px;
             background: var(--primary-color);
             border-radius: 3px;
         }
         
         .why-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
         }
         
@@ -282,7 +270,6 @@
             border-radius: 18px;
             background: var(--dark-bg);
             border: 1px solid rgba(200, 161, 90, 0.2);
-            font-weight: 700;
             color: #fff;
             transition: var(--transition);
             text-align: center;
@@ -299,7 +286,87 @@
         }
         
         .why-box i {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        /* قسم FAQ للSEO */
+        .faq-section {
+            background: var(--dark-bg);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 60px 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(200, 161, 90, 0.2);
+            padding-bottom: 25px;
+        }
+        
+        .faq-question {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .faq-answer {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+        }
+        
+        /* قسم الصور المصغرة في الأسفل */
+        .images-section {
+            margin: 60px 0 30px;
+        }
+        
+        .images-section h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .image-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 180px;
+            transition: var(--transition);
+        }
+        
+        .image-item:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 15px 30px rgba(200, 161, 90, 0.4);
+        }
+        
+        .image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .image-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
             color: var(--primary-color);
         }
         
@@ -308,7 +375,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
-            margin: 60px 0;
+            margin: 50px 0;
         }
         
         .special a {
@@ -392,7 +459,7 @@
         }
         
         .whatsapp:hover {
-            transform: translateY(-3px);
+            transform: translateY(-3px) scale(1.05);
             box-shadow: 0 8px 25px rgba(37, 211, 102, 0.7);
             background: #1da851;
         }
@@ -401,20 +468,31 @@
             font-size: 1.3rem;
         }
         
+        /* Breadcrumb للSEO */
+        .breadcrumb {
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
         /* تحسينات للهواتف */
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
             }
             
-            .header {
-                flex-direction: column;
-                text-align: center;
-                gap: 15px;
+            .logo-text h1 {
+                font-size: 2.5rem;
             }
             
-            .header h1 {
-                font-size: 1.8rem;
+            .logo-img {
+                width: 120px;
+                height: 120px;
             }
             
             .hero {
@@ -422,16 +500,16 @@
             }
             
             .hero h2 {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
             }
             
             .section-title {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
             
             .btn {
-                padding: 14px 30px;
-                font-size: 1rem;
+                padding: 16px 35px;
+                font-size: 1.1rem;
             }
             
             .whatsapp {
@@ -441,19 +519,19 @@
                 font-size: 0.9rem;
             }
             
-            .image-grid {
+            .images-grid {
                 grid-template-columns: 1fr;
             }
             
-            .image-frame {
-                height: 220px;
+            .faq-section {
+                padding: 25px 20px;
             }
         }
         
         /* تحسينات للشاشات الكبيرة */
         @media (min-width: 1200px) {
-            .image-frame {
-                height: 280px;
+            .logo-text h1 {
+                font-size: 4rem;
             }
         }
     </style>
@@ -461,39 +539,31 @@
 
 <body>
     <div class="container">
-        <!-- HEADER -->
-        <div class="header">
-            <img src="https://g.top4top.io/p_3641r1o041.png" alt="TOP10IPTV Logo">
-            <div>
-                <h1 class="shimmer">TOP10IPTV</h1>
-                <div class="header-subtitle">أفضل سيرفر IPTV في العالم</div>
+        <!-- Breadcrumb للSEO -->
+        <div class="breadcrumb">
+            <a href="#">الرئيسية</a> &gt; <span>TOP10IPTV - أفضل سيرفر IPTV</span>
+        </div>
+        
+        <!-- اللوجو الضخم -->
+        <div class="main-logo">
+            <div class="logo-container">
+                <img src="https://g.top4top.io/p_3641r1o041.png" alt="TOP10IPTV - أفضل سيرفر IPTV" class="logo-img">
+            </div>
+            <div class="logo-text">
+                <h1>TOP 10 IPTV</h1>
+                <div class="tagline">رقم 1 في خدمات البث التلفزيوني المميز</div>
             </div>
         </div>
-
-        <!-- TOP IMAGES -->
-        <section class="image-section">
-            <div class="image-grid">
-                <div class="image-frame">
-                    <img src="https://a.top4top.io/p_3641dd9fd1.jpg" alt="قنوات رياضية" loading="lazy">
-                </div>
-                <div class="image-frame">
-                    <img src="https://b.top4top.io/p_3641d2rmw2.png" alt="أفلام ومسلسلات" loading="lazy">
-                </div>
-                <div class="image-frame">
-                    <img src="https://c.top4top.io/p_36414o2xx3.jpg" alt="باقات عالمية" loading="lazy">
-                </div>
-            </div>
-        </section>
 
         <!-- HERO -->
         <div class="hero">
             <h2>أكبر مكتبة رياضية وترفيهية بالعالم</h2>
-            <p>أحدث القنوات والباقات المميزة مع مكتبة أفلام ومسلسلات محدثة يوميًا بلا توقف. جودة عالية ودعم فني متواصل على مدار الساعة.</p>
+            <p>اشترك الآن في <strong>TOP10IPTV</strong> - أفضل سيرفر IPTV في مصر والعالم العربي. نوفر لك أحدث القنوات الرياضية المشفرة مثل beIN Sports، قنوات الأفلام والمسلسلات الحصرية، الباقات العالمية، مع دعم فني متواصل 24/7. يعمل على جميع أجهزة SUNPLUS وغيرها من أجهزة الاستقبال.</p>
 
             <div class="hero-features">
                 <div class="feature-box">
                     <i class="fas fa-futbol"></i>
-                    <span>قنوات رياضية مشفرة</span>
+                    <span>قنوات beIN Sports مشفرة</span>
                 </div>
                 <div class="feature-box">
                     <i class="fas fa-film"></i>
@@ -501,68 +571,120 @@
                 </div>
                 <div class="feature-box">
                     <i class="fas fa-satellite-dish"></i>
-                    <span>باقات عالمية</span>
+                    <span>يعمل على جميع أجهزة SUNPLUS</span>
                 </div>
                 <div class="feature-box">
-                    <i class="fas fa-bolt"></i>
-                    <span>بدون تقطيع</span>
+                    <i class="fas fa-headset"></i>
+                    <span>دعم فني 24 ساعة</span>
                 </div>
             </div>
 
             <a class="btn" href="https://wa.me/201098256570" target="_blank">
-                <i class="fas fa-shopping-cart"></i> طلب اشتراك
+                <i class="fas fa-shopping-cart"></i> اشترك الآن واحصل على عرض خاص
             </a>
         </div>
 
-        <!-- WHY CHOOSE US -->
+        <!-- قسم Why مع محتوى نصي غني للSEO -->
         <section class="section">
             <h2 class="section-title">لماذا تختار TOP10IPTV؟</h2>
             <div class="why-grid">
                 <div class="why-box">
-                    <i class="fas fa-clock"></i>
-                    <div>دعم فني 24/7</div>
-                    <p>فريق دعم فني متاح على مدار الساعة لحل أي مشكلة</p>
+                    <i class="fas fa-trophy"></i>
+                    <h3>جودة البث رقم 1</h3>
+                    <p>نقدم جودة بث عالية الدقة تصل إلى 4K بدون تقطيع أو تأخير، مع خوادم سريعة في جميع أنحاء العالم.</p>
                 </div>
                 <div class="why-box">
-                    <i class="fas fa-sync-alt"></i>
-                    <div>تحديث يومي</div>
-                    <p>مكتبة أفلام ومسلسلات يتم تحديثها يوميًا</p>
+                    <i class="fas fa-broadcast-tower"></i>
+                    <h3>أكثر من 15,000 قناة</h3>
+                    <p>أكبر مكتبة قنوات في العالم العربي تشمل جميع القنوات الرياضية، الأفلام، المسلسلات، والوثائقيات.</p>
                 </div>
                 <div class="why-box">
                     <i class="fas fa-mobile-alt"></i>
-                    <div>يعمل على جميع الأجهزة</div>
-                    <p>متوافق مع أجهزة SUNPLUS وجميع الأجهزة الذكية</p>
+                    <h3>يعمل على جميع الأجهزة</h3>
+                    <p>متوافق مع أجهزة SUNPLUS، Android، Smart TV، iPhone، iPad، وأجهزة الكمبيوتر.</p>
                 </div>
                 <div class="why-box">
-                    <i class="fas fa-shield-alt"></i>
-                    <div>جودة واستقرار</div>
-                    <p>خوادم سريعة ومستقرة بدون تقطيع</p>
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>تحديثات يومية</h3>
+                    <p>مكتبة أفلام ومسلسلات يتم تحديثها يوميًا بأحدث الإصدارات العالمية والعربية.</p>
                 </div>
             </div>
         </section>
 
-        <!-- SPECIAL -->
+        <!-- قسم FAQ للSEO -->
+        <div class="faq-section">
+            <h2 class="section-title">أسئلة شائعة عن خدمة TOP10IPTV</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">ما هي خدمة TOP10IPTV؟</div>
+                <div class="faq-answer">
+                    TOP10IPTV هو أفضل سيرفر IPTV في العالم العربي يوخدم خدمة بث تلفزيوني عبر الإنترنت تشمل آلاف القنوات التلفزيونية العالمية والعربية، القنوات الرياضية المشفرة، الأفلام، المسلسلات، والقنوات الوثائقية.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">ما هي الأجهزة المتوافقة مع TOP10IPTV؟</div>
+                <div class="faq-answer">
+                    خدمتنا تعمل على جميع أجهزة SUNPLUS (CEMEX، NEWGOLD، MARVEL، TAIGAR، MIDIAX، 4MAN، VIPER6060)، بالإضافة إلى أجهزة Android، Smart TV، iPhone، iPad، وأجهزة الكمبيوتر.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">هل يوجد تجربة مجانية لخدمة TOP10IPTV؟</div>
+                <div class="faq-answer">
+                    نعم، نوفر تجربة مجانية لمدة 24 ساعة لجميع العملاء الجدد. يمكنك طلبها عبر التواصل معنا على الواتساب.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">كيف يمكنني الاشتراك في TOP10IPTV؟</div>
+                <div class="faq-answer">
+                    يمكنك الاشتراك عن طريق التواصل معنا مباشرة على الواتساب <strong>+201098256570</strong> وسيقوم فريق الدعم الفني بمساعدتك في عملية الاشتراك والتثبيت.
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم Special -->
         <div class="special">
-            <a href="https://wa.me/201098256570?text=💎 خصم خاص للموزعين والمحلات والفنين" target="_blank">
+            <a href="https://wa.me/201098256570?text=💎 أريد عرض خاص للموزعين والمحلات" target="_blank">
                 <div class="card">
                     <i class="fas fa-gem"></i>
-                    <div>خصم خاص للموزعين والمحلات والفنين</div>
-                    <p>عروض خاصة لرجال الأعمال والموزعين</p>
+                    <div>عروض خاصة للموزعين والمحلات</div>
+                    <p>خصومات حصرية لتجار الجملة والموزعين</p>
                 </div>
             </a>
-            <a href="https://wa.me/201098256570?text=🛠️ خاص بالمستوردين ودعم الأجهزة" target="_blank">
+            <a href="https://wa.me/201098256570?text=🛠️ أريد دعم فني لأجهزة SUNPLUS" target="_blank">
                 <div class="card">
                     <i class="fas fa-tools"></i>
-                    <div>خاص بالمستوردين ودعم الأجهزة</div>
-                    <p>دعم فني متخصص لأجهزة الاستقبال</p>
+                    <div>دعم فني متخصص لأجهزة SUNPLUS</div>
+                    <p>فريق دعم متخصص في أجهزة الاستقبال</p>
                 </div>
             </a>
         </div>
 
+        <!-- قسم الصور المصغرة في الأسفل -->
+        <div class="images-section">
+            <h3>معرض TOP10IPTV</h3>
+            <div class="images-grid">
+                <div class="image-item">
+                    <img src="https://a.top4top.io/p_3641dd9fd1.jpg" alt="قنوات رياضية مشفرة في TOP10IPTV" loading="lazy">
+                    <div class="image-caption">القنوات الرياضية المشفرة</div>
+                </div>
+                <div class="image-item">
+                    <img src="https://b.top4top.io/p_3641d2rmw2.png" alt="أفلام ومسلسلات حصرية TOP10IPTV" loading="lazy">
+                    <div class="image-caption">الأفلام والمسلسلات الحصرية</div>
+                </div>
+                <div class="image-item">
+                    <img src="https://c.top4top.io/p_36414o2xx3.jpg" alt="باقات عالمية TOP10IPTV" loading="lazy">
+                    <div class="image-caption">الباقات العالمية المميزة</div>
+                </div>
+            </div>
+        </div>
+
         <!-- FOOTER -->
         <footer>
-            <h3>TOP10IPTV سيرفر IPTV احترافي</h3>
-            <p>يعمل على جميع أجهزة SUNPLUS مع دعم فني على مدار الساعة</p>
+            <h3>TOP10IPTV - أفضل سيرفر IPTV في العالم العربي</h3>
+            <p>يعمل على جميع أجهزة SUNPLUS مع دعم فني على مدار الساعة طوال أيام الأسبوع</p>
             
             <div class="devices">
                 <span class="device-tag">CEMEX</span>
@@ -574,40 +696,25 @@
                 <span class="device-tag">VIPER6060</span>
             </div>
             
-            <p style="margin-top: 20px; font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">
-                جميع الحقوق محفوظة © TOP10IPTV 2023
+            <p style="margin-top: 25px; font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">
+                TOP10IPTV - جميع الحقوق محفوظة © 2023 | خدمة IPTV الرائدة في مصر والعالم العربي
+            </p>
+            
+            <p style="margin-top: 15px; font-size: 0.8rem; color: rgba(255, 255, 255, 0.5);">
+                هاتف الدعم الفني: +201098256570 | البريد الإلكتروني: info@top10iptv.com
             </p>
         </footer>
     </div>
 
     <!-- WhatsApp Button -->
     <a class="whatsapp" href="https://wa.me/201098256570" target="_blank">
-        <i class="fab fa-whatsapp"></i> واتساب مباشر
+        <i class="fab fa-whatsapp"></i> تواصل معنا على الواتساب
     </a>
 
     <script>
         // تحسين تحميل الصور
         document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.image-frame img');
-            
-            images.forEach(img => {
-                // إضافة حدث عند تحميل الصورة
-                if (img.complete) {
-                    img.parentElement.classList.add('loaded');
-                } else {
-                    img.addEventListener('load', function() {
-                        this.parentElement.classList.add('loaded');
-                    });
-                    
-                    img.addEventListener('error', function() {
-                        // استبدال الصورة المعطوبة بصورة افتراضية
-                        this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250"><rect width="400" height="250" fill="%232a1c12"/><text x="50%" y="50%" font-family="Arial" font-size="20" fill="%23c8a15a" text-anchor="middle" dy=".3em">TOP10IPTV</text></svg>';
-                        this.parentElement.classList.add('loaded');
-                    });
-                }
-            });
-            
-            // تأثير عند التمرير
+            // إضافة تأثير للصور عند التمرير
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
@@ -623,12 +730,47 @@
             }, observerOptions);
             
             // تطبيق التأثير على العناصر
-            const animatedElements = document.querySelectorAll('.why-box, .card, .feature-box');
+            const animatedElements = document.querySelectorAll('.why-box, .card, .image-item, .feature-box');
             animatedElements.forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(20px)';
                 el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
                 observer.observe(el);
+            });
+            
+            // إضافة حدث النقر على الأسئلة الشائعة
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+            
+            // إظهار جميع الإجابات في البداية
+            document.querySelectorAll('.faq-answer').forEach(answer => {
+                answer.style.display = 'block';
+            });
+            
+            // تأثير للوجو عند التمرير
+            window.addEventListener('scroll', function() {
+                const logo = document.querySelector('.logo-container');
+                const scrollPosition = window.scrollY;
+                
+                if (scrollPosition > 100) {
+                    logo.style.transform = 'scale(0.9)';
+                } else {
+                    logo.style.transform = 'scale(1)';
+                }
+            });
+            
+            // تحسين SEO: تتبع النقرات على الأزرار
+            document.querySelectorAll('a').forEach(link => {
+                if (link.href.includes('wa.me')) {
+                    link.addEventListener('click', function() {
+                        // هنا يمكنك إضافة كود Google Analytics
+                        console.log('تم النقر على رابط الواتساب:', this.href);
+                    });
+                }
             });
         });
     </script>
