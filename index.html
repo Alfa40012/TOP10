@@ -62,7 +62,9 @@ a{text-decoration:none;color:inherit}
   position:relative;
 }
 .float-img {
-  width:120px;
+  width:140px; /* حجم موحد للثلاثة */
+  height:140px;
+  object-fit:contain;
   animation: float 4s ease-in-out infinite;
   border-radius:10px;
   border:2px solid var(--primary);
@@ -151,11 +153,16 @@ a{text-decoration:none;color:inherit}
   50%{transform:translateX(4px)}
 }
 
-footer{
-  margin-top:30px;
+/* SPECIAL INFO BOXES */
+.info-box{
+  background:rgba(255, 215, 0, 0.15);
+  border:2px solid var(--primary);
+  border-radius:20px;
+  padding:15px;
+  margin:20px 0;
   text-align:center;
-  font-size:13px;
-  color:var(--muted)
+  font-weight:700;
+  color:var(--primary);
 }
 </style>
 </head>
@@ -179,13 +186,17 @@ footer{
 <section class="hero">
   <h1>استمتع بأضخم مكتبة رياضية وترفيهية</h1>
   <div class="hero-box">
-    <img class="float-img" src="https://j.top4top.io/p_364177bhi1.png" alt="لاعب كرة">
+    <img class="float-img" src="https://e.top4top.io/p_3641vti8b1.png" alt="لاعب كرة">
     <img class="float-img" src="https://k.top4top.io/p_3641motu82.jpg" alt="ممثل">
     <img class="float-img" src="https://b.top4top.io/p_3641eyf061.jpeg" alt="رمز إضافي">
   </div>
   <p>أحدث القنوات والباقات المميزة مع مكتبة أفلام ومسلسلات محدثة يوميًا بلا توقف.</p>
   <a class="hero-btn" href="https://wa.me/201098256570" target="_blank">طلب اشتراك</a>
 </section>
+
+<!-- SPECIAL INFO BOXES -->
+<div class="info-box">💎 خصم خاص للموزعين والمحلات والفنين</div>
+<div class="info-box">🛠️ سطر خاص بالمستوردين ودعم الأجهزة</div>
 
 <!-- PLANS -->
 <div class="section">
