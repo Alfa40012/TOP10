@@ -11,7 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
-/* ================= GLOBAL ================= */
 body{
   margin:0;
   font-family:Cairo,sans-serif;
@@ -27,7 +26,7 @@ body{
 }
 .container{max-width:1200px;margin:auto;padding:20px}
 
-/* ================= EFFECTS ================= */
+/* shimmer للوجو فقط */
 .shimmer{
   background:linear-gradient(90deg,#c8a15a,#fff,#c8a15a);
   background-size:200%;
@@ -40,7 +39,7 @@ body{
   to{background-position:200%}
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 .header{
   display:flex;
   align-items:center;
@@ -57,15 +56,39 @@ body{
   font-weight:900;
 }
 
-/* ================= HERO ================= */
+/* IMAGES TOP */
+.image-section{
+  margin-top:40px;
+  text-align:center;
+}
+.image-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+.image-frame{
+  padding:10px;
+  border-radius:26px;
+  background:rgba(0,0,0,.6);
+  border:3px solid #c8a15a;
+  box-shadow:0 0 35px rgba(200,161,90,.9);
+}
+.image-frame img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+/* HERO */
 .hero{
-  margin-top:30px;
+  margin-top:40px;
   padding:35px;
   border-radius:30px;
   background:rgba(0,0,0,.55);
   text-align:center;
-  box-shadow:0 25px 70px rgba(0,0,0,.9);
 }
+.hero h2{color:#fff}
 .hero p{
   font-size:16px;
   line-height:1.9;
@@ -82,8 +105,8 @@ body{
   border-radius:16px;
   background:rgba(0,0,0,.6);
   border:1px solid #c8a15a;
-  box-shadow:0 0 18px rgba(200,161,90,.7);
   font-weight:800;
+  color:#fff;
 }
 .btn{
   display:inline-block;
@@ -93,14 +116,9 @@ body{
   background:linear-gradient(135deg,#c8a15a,#fff2c1);
   color:#000;
   box-shadow:0 0 30px #c8a15a;
-  animation:pulse 2s infinite;
-}
-@keyframes pulse{
-  0%,100%{box-shadow:0 0 20px #c8a15a}
-  50%{box-shadow:0 0 45px #c8a15a}
 }
 
-/* ================= WHY ================= */
+/* WHY */
 .section{
   margin-top:70px;
   text-align:center;
@@ -116,36 +134,11 @@ body{
   border-radius:20px;
   background:rgba(0,0,0,.6);
   border:1px solid #c8a15a;
-  box-shadow:0 0 22px rgba(200,161,90,.7);
   font-weight:800;
+  color:#fff;
 }
 
-/* ================= LAST IMAGES ================= */
-.image-section{
-  margin-top:70px;
-  text-align:center;
-}
-.image-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
-  margin-top:30px;
-}
-.image-frame{
-  padding:10px;
-  border-radius:26px;
-  background:rgba(0,0,0,.6);
-  border:3px solid #c8a15a;
-  box-shadow:0 0 35px rgba(200,161,90,.9);
-}
-.image-frame img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  border-radius:18px;
-}
-
-/* ================= SPECIAL ================= */
+/* SPECIAL */
 .special{
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -158,21 +151,20 @@ body{
   border-radius:22px;
   background:rgba(0,0,0,.65);
   border:2px solid #c8a15a;
-  box-shadow:0 0 30px rgba(200,161,90,.9);
   font-weight:900;
-  transition:.3s;
+  color:#fff;
+  text-align:center;
 }
-.card:hover{transform:scale(1.05)}
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 footer{
   margin:70px 0 30px;
   font-size:13px;
-  color:#f1e3cc;
   line-height:2;
+  color:#fff;
 }
 
-/* ================= WHATSAPP ================= */
+/* WHATSAPP */
 .whatsapp{
   position:fixed;
   left:20px;
@@ -182,10 +174,8 @@ footer{
   padding:14px 22px;
   border-radius:50px;
   font-weight:900;
-  box-shadow:0 15px 40px rgba(0,0,0,.8);
 }
 
-/* ================= RESPONSIVE ================= */
 @media(max-width:900px){
   .hero-features,
   .why-grid,
@@ -206,86 +196,47 @@ footer{
   <h1 class="shimmer">TOP10IPTV</h1>
 </div>
 
+<!-- TOP IMAGES -->
+<section class="image-section">
+  <div class="image-grid">
+    <div class="image-frame"><img src="https://a.top4top.io/p_3641dd9fd1.jpg"></div>
+    <div class="image-frame"><img src="https://b.top4top.io/p_3641d2rmw2.png"></div>
+    <div class="image-frame"><img src="https://c.top4top.io/p_36414o2xx3.jpg"></div>
+  </div>
+</section>
+
 <!-- HERO -->
 <div class="hero">
-  <h2 class="shimmer">أكبر مكتبة رياضية وترفيهية بالعالم</h2>
-
-  <p>
-    استمتع بتجربة مشاهدة احترافية مع سيرفر
-    <strong>TOP10IPTV</strong>
-  </p>
+  <h2>أكبر مكتبة رياضية وترفيهية بالعالم</h2>
+  <p>أحدث القنوات والباقات المميزة مع مكتبة أفلام ومسلسلات محدثة يوميًا بلا توقف</p>
 
   <div class="hero-features">
-    <div class="feature-box">⚽ قنوات رياضية مشفرة كاملة</div>
-    <div class="feature-box">🎬 أحدث الأفلام والمسلسلات</div>
-    <div class="feature-box">📡 باقات عربية وعالمية</div>
-    <div class="feature-box">🚀 بدون تقطيع وقت الضغط</div>
+    <div class="feature-box">⚽ قنوات رياضية مشفرة</div>
+    <div class="feature-box">🎬 أفلام ومسلسلات حصرية</div>
+    <div class="feature-box">📡 باقات عالمية</div>
+    <div class="feature-box">🚀 بدون تقطيع</div>
   </div>
 
-  <p>
-    أحدث القنوات والباقات المميزة مع مكتبة أفلام ومسلسلات
-    محدثة يوميًا بلا توقف وبأقل استهلاك للإنترنت.
-  </p>
-
-  <a class="btn" href="https://wa.me/201098256570" target="_blank">
-    طلب اشتراك
-  </a>
+  <a class="btn" href="https://wa.me/201098256570">طلب اشتراك</a>
 </div>
-
-<!-- WHY -->
-<section class="section">
-  <h2 class="shimmer">لماذا TOP10IPTV ؟</h2>
-
-  <div class="why-grid">
-    <div class="why-box">📺 يعمل على جميع أجهزة SUNPLUS</div>
-    <div class="why-box">⚙️ CEMEX / NEWGOLD / MARVEL</div>
-    <div class="why-box">📡 TAIGAR / MIDIAX / 4MAN</div>
-    <div class="why-box">💎 VIPER6060 وجميع أجهزة الصن بلص</div>
-    <div class="why-box">🛠️ دعم فني احترافي 24/7</div>
-    <div class="why-box">🔥 سيرفرات رياضية خاصة</div>
-  </div>
-</section>
-
-<!-- LAST 3 IMAGES -->
-<section class="image-section">
-  <h2 class="shimmer">جودة – قوة – استقرار</h2>
-
-  <div class="image-grid">
-    <div class="image-frame">
-      <img src="https://a.top4top.io/p_3641dd9fd1.jpg">
-    </div>
-    <div class="image-frame">
-      <img src="https://b.top4top.io/p_3641d2rmw2.png">
-    </div>
-    <div class="image-frame">
-      <img src="https://c.top4top.io/p_36414o2xx3.jpg">
-    </div>
-  </div>
-</section>
 
 <!-- SPECIAL -->
 <div class="special">
-  <a href="https://wa.me/201098256570?text=💎 خصم خاص للموزعين والمحلات والفنين" target="_blank">
+  <a href="https://wa.me/201098256570?text=💎 خصم خاص للموزعين والمحلات والفنين">
     <div class="card">💎 خصم خاص للموزعين والمحلات والفنين</div>
   </a>
-  <a href="https://wa.me/201098256570?text=🛠️ خاص بالمستوردين ودعم الأجهزة" target="_blank">
+  <a href="https://wa.me/201098256570?text=🛠️ خاص بالمستوردين ودعم الأجهزة">
     <div class="card">🛠️ خاص بالمستوردين ودعم الأجهزة</div>
   </a>
 </div>
 
-<!-- SEO TEXT -->
 <footer>
-<strong>TOP10IPTV</strong> هو أفضل سيرفر IPTV في العالم يوفر قنوات رياضية مشفرة،
-أفلام ومسلسلات محدثة يوميًا، يعمل على جميع أجهزة الصن بلص مثل
-CEMEX وNEWGOLD وMARVEL وTAIGAR وMIDIAX و4MAN وVIPER6060،
-مع سيرفرات قوية بدون تقطيع ودعم فني متواصل.
+TOP10IPTV سيرفر IPTV احترافي يعمل على جميع أجهزة SUNPLUS
+CEMEX – NEWGOLD – MARVEL – TAIGAR – MIDIAX – 4MAN – VIPER6060
 </footer>
 
 </div>
 
-<a class="whatsapp" href="https://wa.me/201098256570" target="_blank">
-📲 واتساب مباشر
-</a>
-
+<a class="whatsapp" href="https://wa.me/201098256570">📲 واتساب مباشر</a>
 </body>
 </html>
