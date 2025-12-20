@@ -9,52 +9,70 @@
 
 <style>
 :root{
-  --primary-gold:#FFD700;
-  --primary-havana:#3b1f1a;
+  --gold:#FFD700;
+  --havana:#3b1f1a;
   --bg:#1a0f0b;
   --box:#2c1b17;
   --text:#fff;
   --muted:#f0e6d2;
 }
 
+/* RESET */
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Cairo,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 a{text-decoration:none;color:inherit}
-.container{max-width:1120px;margin:auto;padding:20px}
+.container{max-width:1120px;margin:auto;padding:20px;text-align:center}
 
-/* HEADER */
-.top-brand{text-align:center;margin-bottom:20px}
-.top-logo img{width:100px;margin-bottom:8px;border-radius:12px}
-.top-title{font-weight:900;font-size:24px;background:linear-gradient(90deg, var(--primary-gold), #f6e27f); -webkit-background-clip:text; -webkit-text-fill-color:transparent;margin-bottom:5px}
+/* LOGO STYLE */
+.top-logo img, footer img{
+  width:150px;
+  border-radius:20px;
+  border:4px solid var(--gold);
+  box-shadow:0 0 20px var(--gold);
+  margin-bottom:10px;
+  transition:transform .3s;
+}
+.top-logo img:hover, footer img:hover{transform:scale(1.05)}
+
+.top-title{font-weight:900;font-size:28px;background:linear-gradient(90deg,var(--gold),#f6e27f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px}
 .top-sub{color:var(--muted);font-size:14px;margin-bottom:6px}
 .top-devices{color:var(--muted);font-size:13px;margin-bottom:15px}
 
 /* HERO */
 .hero{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  background:linear-gradient(135deg, var(--primary-havana), #4b2e2b);
-  border-radius:20px;padding:25px;margin-bottom:40px;position:relative;
+  position:relative;
+  background:linear-gradient(135deg,var(--havana),#4b2e2b);
+  border-radius:20px;
+  padding:35px 20px;
+  margin-bottom:40px;
   overflow:hidden;
 }
 .hero::before{
-  content:"";position:absolute;top:0;left:0;width:100%;height:100%;
-  background:linear-gradient(45deg, rgba(255,215,0,0.1), rgba(255,255,255,0.05));
-  pointer-events:none;animation:moveBG 15s linear infinite;
+  content:"";
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  background:linear-gradient(45deg, rgba(255,215,0,0.15), rgba(255,255,255,0.05));
+  pointer-events:none;
+  animation:moveBG 15s linear infinite;
 }
 @keyframes moveBG{
   0%{background-position:0 0}
   100%{background-position:200px 200px}
 }
-.hero h1{font-size:32px;font-weight:900;z-index:1;background:linear-gradient(90deg, var(--primary-gold), #f6e27f); -webkit-background-clip:text; -webkit-text-fill-color:transparent;margin-bottom:15px;text-align:center}
-.hero p{font-size:15px;color:var(--muted);text-align:center;margin-bottom:18px;z-index:1}
+.hero h1{
+  font-size:36px;font-weight:900;margin-bottom:15px;
+  background:linear-gradient(90deg,var(--gold),#f6e27f);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p{font-size:16px;color:var(--muted);margin-bottom:20px}
 .hero-btn{
-  background:linear-gradient(45deg, #FFD700, #f6e27f);
-  padding:12px 28px;border-radius:999px;font-weight:900;color:#000;
-  animation:glow 2s ease-in-out infinite;display:inline-block;z-index:1
+  background:linear-gradient(45deg,var(--gold),#f6e27f);
+  padding:14px 30px;border-radius:999px;font-weight:900;color:#000;
+  animation:glow 2s ease-in-out infinite;display:inline-block
 }
 @keyframes glow{
-  0%,100%{box-shadow:0 0 10px #FFD700}
-  50%{box-shadow:0 0 25px #FFD700}
+  0%,100%{box-shadow:0 0 15px var(--gold)}
+  50%{box-shadow:0 0 35px var(--gold)}
 }
 
 /* FEATURES */
@@ -62,7 +80,7 @@ a{text-decoration:none;color:inherit}
 @media(max-width:900px){.features{grid-template-columns:1fr}}
 .feature{background:var(--box);padding:20px;border-radius:16px;text-align:center;transition:transform .3s}
 .feature:hover{transform:translateY(-5px)}
-.feature h3{color:var(--primary-gold);font-weight:800;margin-bottom:10px;font-size:18px}
+.feature h3{color:var(--gold);font-weight:800;margin-bottom:10px;font-size:18px}
 .feature p{color:var(--muted);font-size:14px}
 
 /* PLANS */
@@ -70,12 +88,12 @@ a{text-decoration:none;color:inherit}
 @media(max-width:900px){.plans{grid-template-columns:1fr}}
 .plan{background:var(--box);padding:20px;border-radius:20px;text-align:center;transition:transform .3s}
 .plan:hover{transform:translateY(-5px)}
-.plan h3{color:var(--primary-gold);font-weight:800;margin-bottom:10px;font-size:18px}
+.plan h3{color:var(--gold);font-weight:800;margin-bottom:10px;font-size:18px}
 .price{font-size:20px;font-weight:900;margin:8px 0}
 .plan ul{list-style:none;padding:0;margin-bottom:12px}
 .plan ul li{margin-bottom:6px;color:var(--muted)}
-.plan a{display:inline-block;margin-top:12px;background:var(--primary-gold);padding:10px 22px;border-radius:999px;font-weight:800;color:#000;transition:transform .3s}
-.plan a:hover{transform:scale(1.05)}
+.plan a{display:inline-block;margin-top:12px;background:var(--gold);padding:12px 25px;border-radius:999px;font-weight:800;color:#000;transition:transform .3s}
+.plan a:hover{transform:scale(1.05);box-shadow:0 0 25px var(--gold)}
 
 /* FOOTER */
 footer{text-align:center;color:var(--muted);margin-top:30px;padding:20px 0;background:var(--box);border-radius:16px}
@@ -93,7 +111,9 @@ footer{text-align:center;color:var(--muted);margin-top:30px;padding:20px 0;backg
 <div class="container">
   <!-- HEADER -->
   <div class="top-brand">
-    <img src="https://g.top4top.io/p_3641r1o041.png" alt="TOP10 IPTV Logo">
+    <div class="top-logo">
+      <img src="https://g.top4top.io/p_3641r1o041.png" alt="TOP10 IPTV Logo">
+    </div>
     <div class="top-title">TOP10 IPTV</div>
     <div class="top-sub">أكبر مكتبة رياضية ترفيهية بالعالم</div>
     <div class="top-devices">موجود على أجهزة الصن بلص: CEMEX / NEWGOLD / MARVEL / TAIGAR / MIDIAX / 4MAN / VIPER6060 / جميع أجهزة الصن بلص</div>
@@ -160,8 +180,8 @@ footer{text-align:center;color:var(--muted);margin-top:30px;padding:20px 0;backg
 </div>
 
 <footer>
-  <img src="https://g.top4top.io/p_3641r1o041.png" alt="TOP10 IPTV Logo" style="width:80px;margin-bottom:10px"><br>
-  © TOP10 IPTV – جميع الحقوق محفوظة
+  <img src="https://g.top4top.io/p_3641r1o041.png" alt="TOP10 IPTV Logo">
+  <div>© TOP10 IPTV – جميع الحقوق محفوظة</div>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/201098256570" target="_blank">📲 تواصل معنا</a>
