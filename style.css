@@ -1,315 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&amp;display=swap');
+/* =========================================== */
+/* CSS Media Queries لتكييف التخطيط تلقائياً */
+/* =========================================== */
 
-/* --------Global Rules--------- */
-* {
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --main-color: #e50914;
-    --body-bg-color: black;
-    --text-white: white;
-    --text-black: black;
-    --card-bg-color: #2d2d2d;
-    --main-transition: 0.3s ease-in-out;
-    --background-color: #eee;
-}
-
-body {
-    font-family: 'Cairo', sans-serif;
-    background-color: var(--body-bg-color);
-    color: var(--text-white);
-    font-size: 16px;
-
-    @media (max-width: 776px) {
-        font-size: 12px;
+/* الهواتف (شاشات بعرض حتى 768 بكسل) */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .logo-text h1 {
+        font-size: 2.2rem; /* تصغير حجم نص اللوجو */
+    }
+    .logo-img {
+        width: 100px;
+        height: 100px;
+    }
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .feature-box, .why-box, .card {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 14px 30px;
+        font-size: 1rem;
+        width: 100%; /* جعل الزر يأخذ العرض كاملًا */
+        text-align: center;
+    }
+    .stats-grid, .testimonials-grid, .why-grid, .images-grid {
+        grid-template-columns: 1fr; /* تحويل كل الشبكات إلى عمود واحد */
+        gap: 15px;
+    }
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    .payment-methods {
+        /* ترتيب وسائل الدفع في صفين على الهاتف */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .payment-method {
+        width: auto; /* عرض مرن */
+        height: auto;
+        padding: 15px 10px;
+    }
+    .image-item {
+        height: 200px; /* تقليل ارتفاع إطارات الصور */
+    }
+    .whatsapp {
+        left: 10px;
+        bottom: 10px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 }
 
-h1,h2,h3,h4,h5,h6,p,ul {
-    margin-bottom: 0;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-/*------------------ My Container ---------------*/
-.mycontainer {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 768px) {
-    .mycontainer {
-        width: 750px;
+/* الأجهزة اللوحية (شاشات بعرض من 769 إلى 1024 بكسل) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-features, .why-grid {
+        grid-template-columns: repeat(2, 1fr); /* تقسيم العناصر إلى عمودين */
+    }
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 992px) {
-    .mycontainer {
-        width: 970px;
+/* أجهزة سطح المكتب (شاشات بعرض أكثر من 1024 بكسل) */
+@media only screen and (min-width: 1025px) {
+    /* الحفاظ على التصميم الأساسي الذي لديك للشاشات الكبيرة */
+    .container {
+        max-width: 1200px;
     }
-}
-
-@media (min-width: 1200px) {
-    .mycontainer {
-        width: 1170px;
-    }
-}
-
-/*------------------ Header --------------------*/
-header {
-    position: relative;
-    width: 100%;
-    height: 550px;
-    background: no-repeat center;
-    background-size: cover;
-    z-index: 1;
-}
-
-header:before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(108, 6, 12, 0.7);
-    z-index: -1;
-}
-
-header nav {
-    position: relative;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(0 0 0 / 0.4);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-header .head-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: calc(100% - 70px);
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-}
-
-header .head-text a {
-    border: 2px solid white;
-    padding: 6px 10px;
-    transition: 0.3s ease-in-out;
-    font-weight: normal;
-}
-
-header .head-text a:hover {
-    background-color: black;
-    border-color: black;
-}
-
-
-
-/*----------------- brands slider section ----------------*/
-#brands-sec {
-    margin-top: 70px;
-    overflow-x: auto;
-}
-
-#brands-sec::-webkit-scrollbar {
-    appearance: none;
-}
-
-#brands-sec .brands-slider {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    min-width: 940px;
-}
-
-#brands-sec .brands-slider img {
-    max-height: 40px;
-}
-
-
-
-/*----------------- feature section ----------------*/
-#feature-sec {
-    margin-top: 70px;
-}
-
-#feature-sec .feature-card {
-    background-color: var(--card-bg-color);
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-}
-
-
-
-/*--------------------- Statics Section --------------------*/
-#statics-sec {
-    position: relative;
-    margin-top: 70px;
-    padding: 100px 0;
-    background: no-repeat fixed top center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-
-#statics-sec:before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: -1;
-}
-
-#statics-sec .static-card {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-}
-
-
-
-/*--------------------- Prices Section --------------------*/
-#prices-sec {
-    margin-top: 70px;
-}
-
-#prices-sec .price-card {
-    position: relative;
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    color: var(--text-black);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#prices-sec .price-card a {
-    color: var(--text-white);
-    background-color: var(--main-color);
-    padding: 4px 20px;
-    border-radius: 4px;
-    max-width: 100px;
-    margin: auto;
-}
-
-#prices-sec .price-card:nth-of-type(2) {
-    background-color: var(--main-color);
-    color: var(--text-white);
-}
-
-#prices-sec .price-card:nth-of-type(2) a {
-    color: var(--main-color);
-    background-color: var(--text-white);
-}
-
-
-
-/*--------------------- subscription reasons Section --------------------*/
-#subscription-reasons-sec {
-    margin-top: 70px;
-}
-
-#subscription-reasons-sec .reason-card {
-    display: flex;
-    gap: 20px;
-    background-color: var(--card-bg-color);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-
-
-/*--------------------- questions Section --------------------*/
-#questions-sec {
-    margin-top: 70px;
-}
-
-#questions-sec .questions-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 700px;
-    margin: auto;
-    gap: 10px;
-}
-
-#questions-sec .question-card .question-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    margin-bottom: 1px;
-    background-color: var(--card-bg-color);
-}
-
-#questions-sec .question-card .question-text:hover {
-    background-color: rgb(65,65,65);
-}
-
-#questions-sec .question-card .question-text i {
-    transition: 0.3s ease-in-out;
-}
-
-#questions-sec .question-card.active .question-text i {
-    transform: rotate(135deg);
-}
-
-#questions-sec .question-card .answer-text {
-    height: auto;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.3s ease;
-    background-color: var(--card-bg-color);
-}
-
-
-#questions-sec .question-card.active .answer-text {
-    max-height: 1000px;
-}
-
-#questions-sec .question-card .answer-text > * {
-    padding: 16px;
-}
-
-
-
-
-/*---------------------- Footer ---------------------*/
-footer {
-    margin-top: 70px;
-    background-color: var(--card-bg-color);
-    text-align: center;
-    padding: 20px;
 }
