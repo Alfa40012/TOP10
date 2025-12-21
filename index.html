@@ -6,17 +6,12 @@
 
 <title>TOP10IPTV | اشتراك IPTV سنوي آمن لكل الدول</title>
 <meta name="description" content="اشتراك IPTV سنوي آمن يعمل في جميع الدول. قنوات ترفيهية ورياضية + أفلام ومسلسلات VOD. تجربة مجانية قبل الاشتراك.">
-<link rel="canonical" href="https://top10.ooguy.com/">
 
 <link rel="icon" href="https://i.ibb.co/Hf6y75Nx/LOGO-TOP-10-IPTV.png">
-
-<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- ✅ Schema SEO -->
+<!-- Schema -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -25,7 +20,6 @@
  "description": "Premium IPTV subscription available worldwide.",
  "offers": {
    "@type": "AggregateOffer",
-   "offerCount": "3",
    "lowPrice": "40",
    "highPrice": "400",
    "priceCurrency": "USD",
@@ -36,29 +30,29 @@
 
 <style>
 :root{
- --bg1:#1b1209;
- --bg2:#2a1a10;
+ --bg-main:#3b0a0a;
+ --bg-deep:#240606;
  --gold:#c8a15a;
- --fire:#ffcc70;
- --txt:#f5f5f5;
+ --gold-fire:#ffcc70;
+ --text:#f5f5f5;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
 body{
  font-family:'Cairo',sans-serif;
- background:radial-gradient(circle at top,#3a2615,#1b1209 75%);
- color:var(--txt);
+ background:radial-gradient(circle at top,#5a1414,var(--bg-deep) 75%);
+ color:var(--text);
 }
 
 .container{max-width:1200px;margin:auto;padding:20px}
 
 .section{
- background:linear-gradient(145deg,var(--bg2),#120a05);
+ background:linear-gradient(145deg,var(--bg-main),var(--bg-deep));
  border:2px solid rgba(200,161,90,.6);
  border-radius:30px;
  padding:50px 30px;
  margin:40px 0;
- box-shadow:0 0 40px rgba(200,161,90,.25);
+ box-shadow:0 0 40px rgba(200,161,90,.35);
  animation:fadeUp 1s ease both;
 }
 
@@ -68,79 +62,68 @@ body{
 }
 
 .logo{
- max-width:140px;
- border-radius:20px;
- box-shadow:0 0 30px rgba(255,204,112,.7);
+ max-width:150px;
  display:block;
  margin:auto;
+ border-radius:20px;
+ box-shadow:0 0 30px rgba(255,204,112,.8);
 }
 
-h1,h2{color:var(--fire);text-align:center;margin-bottom:20px}
+.hero-img{
+ width:100%;
+ max-width:420px;
+ display:block;
+ margin:30px auto;
+ border-radius:25px;
+ border:3px solid var(--gold);
+ box-shadow:0 0 30px rgba(255,204,112,.6);
+}
+
+h1,h2{color:var(--gold-fire);text-align:center;margin-bottom:20px}
 p{text-align:center;font-size:1.2rem}
 
 .features{list-style:none;margin-top:30px}
 .features li{margin-bottom:15px;font-size:1.1rem}
-.features i{color:var(--fire);margin-left:10px}
+.features i{color:var(--gold-fire);margin-left:10px}
 
 .btn{
  display:inline-block;
  margin-top:30px;
  padding:18px 45px;
- background:linear-gradient(135deg,var(--gold),var(--fire));
+ background:linear-gradient(135deg,var(--gold),var(--gold-fire));
  color:#000;
  font-weight:800;
  border-radius:50px;
  text-decoration:none;
- box-shadow:0 0 30px rgba(255,204,112,.7);
+ box-shadow:0 0 30px rgba(255,204,112,.8);
  transition:.4s;
 }
 .btn:hover{transform:scale(1.08)}
 
-.stats{
+.stats, .pricing, .payments{
  display:grid;
- grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
  gap:25px;
  margin-top:40px;
 }
-.stat{
- text-align:center;
- border:1px solid rgba(255,204,112,.4);
- border-radius:20px;
- padding:25px;
-}
-.stat-num{
- font-size:3rem;
- font-weight:900;
- color:var(--fire);
-}
 
-.pricing{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
- gap:30px;
- margin-top:40px;
-}
-.plan{
+.box{
  border:2px solid rgba(255,204,112,.6);
- border-radius:25px;
- padding:30px;
+ border-radius:22px;
+ padding:25px;
  text-align:center;
  transition:.4s;
 }
-.plan:hover{transform:translateY(-10px)}
-.price{font-size:3rem;font-weight:900;color:var(--fire)}
+.box:hover{transform:translateY(-8px)}
 
-footer{
- text-align:center;
- font-size:1rem;
- color:#ddd;
+.num{font-size:3rem;font-weight:900;color:var(--gold-fire)}
+
+.payment-icon{
+ font-size:3.5rem;
+ margin-bottom:10px;
 }
 
-.visitors{
- margin-top:20px;
- font-size:1.1rem;
- color:var(--fire);
-}
+footer{text-align:center;color:#ddd}
 </style>
 </head>
 
@@ -151,11 +134,13 @@ footer{
 <!-- HERO -->
 <section class="section">
 <img src="https://i.ibb.co/Hf6y75Nx/LOGO-TOP-10-IPTV.png" class="logo" loading="lazy">
-<h1>اشتراك IPTV سنوي مميز</h1>
+<h1>اشتراك IPTV سنوي فاخر</h1>
 <p>ترفيه • رياضة • أفلام • مسلسلات • جودة عالية</p>
 
+<img src="https://i.ibb.co/9gPZ5Zq/iptv-devices.png" class="hero-img" alt="IPTV Devices">
+
 <ul class="features">
-<li><i class="fa-solid fa-check"></i>يعمل على جميع الأجهزة</li>
+<li><i class="fa-solid fa-check"></i>يعمل على Smart TV • Android • iOS • PC</li>
 <li><i class="fa-solid fa-check"></i>تجربة مجانية قبل الدفع</li>
 <li><i class="fa-solid fa-check"></i>دعم فني عربي 24/7</li>
 </ul>
@@ -169,10 +154,10 @@ footer{
 <section class="section">
 <h2>إحصائيات السيرفر</h2>
 <div class="stats">
- <div class="stat"><div class="stat-num" data-num="15000">0</div>قناة</div>
- <div class="stat"><div class="stat-num" data-num="60000">0</div>VOD</div>
- <div class="stat"><div class="stat-num" data-num="99">0%</div>استقرار</div>
- <div class="stat"><div class="stat-num" data-num="24">0</div>دعم ساعة</div>
+ <div class="box"><div class="num">15000+</div>قناة</div>
+ <div class="box"><div class="num">60000+</div>VOD</div>
+ <div class="box"><div class="num">99.9%</div>استقرار</div>
+ <div class="box"><div class="num">24/7</div>دعم</div>
 </div>
 </section>
 
@@ -180,50 +165,38 @@ footer{
 <section class="section">
 <h2>الأسعار السنوية</h2>
 <div class="pricing">
- <div class="plan"><div class="price">400 جنيه</div>مصر</div>
- <div class="plan"><div class="price">50 ريال</div>السعودية</div>
- <div class="plan"><div class="price">40$</div>باقي الدول</div>
+ <div class="box"><div class="num">400</div>جنيه – مصر</div>
+ <div class="box"><div class="num">50</div>ريال – السعودية</div>
+ <div class="box"><div class="num">40$</div>دولي</div>
+</div>
+</section>
+
+<!-- PAYMENT -->
+<section class="section">
+<h2>بوابة الدفع الآمن</h2>
+<div class="payments">
+ <div class="box"><i class="fab fa-cc-visa payment-icon"></i>Visa</div>
+ <div class="box"><i class="fab fa-cc-mastercard payment-icon"></i>Mastercard</div>
+ <div class="box"><i class="fab fa-paypal payment-icon"></i>PayPal</div>
+ <div class="box"><i class="fab fa-apple-pay payment-icon"></i>Apple Pay</div>
+ <div class="box"><i class="fab fa-google-pay payment-icon"></i>Google Pay</div>
+ <div class="box"><i class="fab fa-bitcoin payment-icon"></i>Crypto</div>
 </div>
 </section>
 
 <!-- CTA -->
 <section class="section">
 <h2>جاهز تبدأ؟</h2>
-<p>تفعيل فوري • ضمان استرجاع • دعم متواصل</p>
+<p>تفعيل فوري • ضمان استرجاع • دعم مستمر</p>
 <div style="text-align:center">
 <a class="btn" href="https://wa.me/201098256570">اشترك الآن</a>
 </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="section">
 <p>© 2025 TOP10IPTV – جميع الحقوق محفوظة</p>
-<div class="visitors">
-عدد الزوار: <span id="visitorCount">0</span>
-</div>
 </footer>
 
 </div>
-
-<script>
-// Animated Counters
-document.querySelectorAll('.stat-num').forEach(el=>{
- let target=+el.dataset.num;
- let count=0;
- let inc=Math.ceil(target/100);
- let timer=setInterval(()=>{
-   count+=inc;
-   if(count>=target){count=target;clearInterval(timer);}
-   el.textContent=el.textContent.includes('%')?count+'%':count;
- },20);
-});
-
-// Visitor Counter (Front-End Safe)
-let visits=localStorage.getItem('visits');
-visits=visits?++visits:1;
-localStorage.setItem('visits',visits);
-document.getElementById('visitorCount').textContent=visits;
-</script>
-
 </body>
 </html>
