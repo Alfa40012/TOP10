@@ -13,6 +13,9 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://i.ibb.co/fdss9YYQ/logo.png">
 
+<!-- خطوط -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif;}
 body{
@@ -67,9 +70,10 @@ footer p{margin:5px 0;}
 
 /* WhatsApp Floating */
 .whatsapp{
-position:fixed;bottom:25px;left:25px;background:#25d366;color:#fff;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:34px;z-index:999;box-shadow:0 5px 20px rgba(0,0,0,0.5);
+position:fixed;bottom:25px;left:25px;background:#25d366;color:#fff;height:65px;border-radius:50px;display:flex;align-items:center;justify-content:center;font-size:20px;padding:0 15px;z-index:999;box-shadow:0 5px 20px rgba(0,0,0,0.5);font-weight:bold;
 transition:.3s;}
 .whatsapp:hover{transform:scale(1.1);}
+.whatsapp i{font-size:28px;margin-right:8px;}
 
 /* Animations */
 @keyframes fadeIn{
@@ -94,7 +98,7 @@ to{opacity:1;transform:translateY(0);}
 <body>
 
 <!-- WhatsApp floating -->
-<a href="https://wa.me/201000000000" class="whatsapp">💬</a>
+<a href="https://wa.me/201000000000" class="whatsapp"><i class="fab fa-whatsapp"></i> تحدث معنا</a>
 
 <!-- HEADER HERO -->
 <header class="container">
@@ -168,12 +172,15 @@ to{opacity:1;transform:translateY(0);}
 <p>عدد الزوار: <strong id="visitor-count">128,542</strong></p>
 </footer>
 
+<!-- عداد زوار وهمي -->
 <script>
-// عداد الزوار وهمي متحرك
 let visitors=document.getElementById('visitor-count');
 let count=parseInt(visitors.innerText.replace(',',''));
 setInterval(()=>{count++;visitors.innerText=count.toLocaleString()},1500);
 </script>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
