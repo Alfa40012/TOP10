@@ -4,9 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TOP10IPTV – اشتراك IPTV سنوي بجودة عالية وبث ثابت</title>
+<title>TOP10IPTV | اشتراك IPTV سنوي بث ثابت وجودة عالية</title>
 
-<meta name="description" content="TOP10IPTV سيرفر IPTV قوي يوفر اشتراك سنوي بجودة عالية، بث ثابت بدون تقطيع، قنوات رياضية وترفيهية، أفلام ومسلسلات VOD، دعم عربي 24/7 وتجربة مجانية قبل الاشتراك.">
+<meta name="description" content="TOP10IPTV سيرفر IPTV قوي يقدم اشتراك سنوي بث ثابت بدون تقطيع، قنوات رياضية وترفيهية، أفلام ومسلسلات VOD، دعم فني عربي وتجربة مجانية قبل الاشتراك.">
+
+<meta name="keywords" content="اشتراك IPTV, IPTV سنوي, سيرفر IPTV, بث مباشر, قنوات رياضية, IPTV بدون تقطيع">
+
+<link rel="canonical" href="https://top10.ooguy.com/">
 
 <link rel="icon" href="https://i.ibb.co/fdss9YYQ/LOGO.png">
 
@@ -16,86 +20,56 @@
 <style>
 :root{
  --wine:#3b0a0a;
- --wine-dark:#160404;
+ --wine-dark:#150303;
  --gold:#c8a15a;
  --gold-fire:#ffcc70;
  --text:#f5f5f5;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{
  font-family:'Cairo',sans-serif;
  background:
- radial-gradient(circle at top,#5a1414 0%,transparent 45%),
+ radial-gradient(circle at top,#5c1414 0%,transparent 45%),
  linear-gradient(180deg,var(--wine),var(--wine-dark));
  color:var(--text);
  overflow-x:hidden;
 }
 
-.container{max-width:1300px;margin:auto;padding:20px}
+.container{
+ max-width:1300px;
+ margin:auto;
+ padding:20px;
+}
 
 .section{
- position:relative;
  margin:80px 0;
  padding:80px 45px;
  border-radius:40px;
- background:
- linear-gradient(145deg,rgba(255,255,255,.06),rgba(0,0,0,.45));
+ background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(0,0,0,.45));
  border:2px solid rgba(255,204,112,.55);
- box-shadow:
- 0 0 50px rgba(255,204,112,.25),
- inset 0 0 80px rgba(0,0,0,.6);
- animation:fadeUp 1.3s ease both;
+ box-shadow:0 0 45px rgba(255,204,112,.25);
+ animation:fadeUp 1.2s ease both;
 }
 
 @keyframes fadeUp{
- from{opacity:0;transform:translateY(70px)}
+ from{opacity:0;transform:translateY(60px)}
  to{opacity:1;transform:none}
 }
 
-.section::before{
- content:"";
- position:absolute;
- inset:-2px;
- border-radius:inherit;
- background:linear-gradient(120deg,transparent,var(--gold-fire),transparent);
- opacity:.18;
-}
-
 .logo{
- max-width:180px;
  display:block;
- margin:0 auto 40px;
- filter:drop-shadow(0 0 30px var(--gold-fire));
-}
-
-.hero-grid{
- display:grid;
- grid-template-columns:1.2fr 1fr;
- gap:50px;
- align-items:center;
-}
-@media(max-width:900px){
- .hero-grid{grid-template-columns:1fr}
-}
-
-.hero-img{
- width:100%;
- border-radius:35px;
- border:3px solid var(--gold);
- box-shadow:0 0 50px rgba(255,204,112,.7);
- animation:float 6s ease-in-out infinite;
-}
-
-@keyframes float{
- 0%,100%{transform:translateY(0)}
- 50%{transform:translateY(-18px)}
+ margin:0 auto 35px;
+ max-width:180px;
+ filter:drop-shadow(0 0 25px var(--gold-fire));
 }
 
 h1{
- font-size:clamp(2.2rem,5vw,3.8rem);
+ font-size:clamp(2.2rem,5vw,3.6rem);
  color:var(--gold-fire);
  margin-bottom:25px;
+ text-align:center;
 }
 
 h2{
@@ -109,16 +83,21 @@ p{
  font-size:1.25rem;
  line-height:1.9;
  color:#eee;
+ text-align:center;
 }
 
 .features{
  list-style:none;
- margin-top:30px;
+ max-width:600px;
+ margin:35px auto 0;
+ text-align:right;
 }
+
 .features li{
  margin-bottom:15px;
  font-size:1.15rem;
 }
+
 .features i{
  color:var(--gold-fire);
  margin-left:10px;
@@ -126,26 +105,28 @@ p{
 
 .btn{
  display:inline-block;
- margin-top:40px;
+ margin:45px auto 0;
  padding:22px 55px;
  border-radius:60px;
  font-weight:900;
  background:linear-gradient(135deg,var(--gold),var(--gold-fire));
  color:#000;
  text-decoration:none;
- box-shadow:0 0 50px rgba(255,204,112,.9);
+ box-shadow:0 0 45px rgba(255,204,112,.9);
  transition:.4s;
 }
+
 .btn:hover{
  transform:scale(1.12);
- box-shadow:0 0 80px rgba(255,204,112,1);
+ box-shadow:0 0 75px rgba(255,204,112,1);
 }
 
 .stats{
  display:grid;
- grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
  gap:35px;
 }
+
 .stat{
  text-align:center;
  padding:35px;
@@ -153,6 +134,7 @@ p{
  background:rgba(0,0,0,.35);
  border:2px solid rgba(255,204,112,.5);
 }
+
 .stat-num{
  font-size:3.4rem;
  font-weight:900;
@@ -161,18 +143,22 @@ p{
 
 .cards{
  display:grid;
- grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
  gap:35px;
 }
+
 .card{
  padding:40px;
  border-radius:30px;
  background:rgba(0,0,0,.35);
  border:2px solid rgba(255,204,112,.5);
- transition:.4s;
  text-align:center;
+ transition:.4s;
 }
-.card:hover{transform:translateY(-14px)}
+
+.card:hover{
+ transform:translateY(-12px);
+}
 
 .payment-icon{
  font-size:4rem;
@@ -204,6 +190,7 @@ footer{
  box-shadow:0 0 25px rgba(37,211,102,.8);
  animation:pulse 1.8s infinite;
 }
+
 @keyframes pulse{
  0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}
  70%{box-shadow:0 0 0 25px rgba(37,211,102,0)}
@@ -218,73 +205,63 @@ footer{
 
 <!-- HERO -->
 <section class="section">
-<img src="https://i.ibb.co/fdss9YYQ/LOGO.png" class="logo" alt="TOP10IPTV Logo">
+ <img src="https://i.ibb.co/fdss9YYQ/LOGO.png" class="logo" alt="TOP10IPTV Logo">
 
-<div class="hero-grid">
- <div>
-  <h1>TOP10IPTV – اشتراك IPTV سنوي فاخر</h1>
-  <p>
-   مع <strong>TOP10IPTV</strong> هتدخل عالم ترفيه مختلف.
-   بث ثابت، جودة عالية، محتوى متنوع، وتجربة مشاهدة مريحة بدون تقطيع.
-   اشتراك واحد يغطي كل احتياجاتك الترفيهية.
-  </p>
+ <h1>TOP10IPTV – اشتراك IPTV سنوي بث ثابت</h1>
 
-  <ul class="features">
-   <li><i class="fa-solid fa-check"></i>تشغيل ثابت بدون تقطيع</li>
-   <li><i class="fa-solid fa-check"></i>قنوات رياضية وترفيهية عالمية</li>
-   <li><i class="fa-solid fa-check"></i>أفلام ومسلسلات VOD محدثة</li>
-   <li><i class="fa-solid fa-check"></i>تشغيل على جميع الأجهزة</li>
-   <li><i class="fa-solid fa-check"></i>تجربة مجانية قبل الاشتراك</li>
-  </ul>
+ <p>
+ TOP10IPTV هو سيرفر IPTV احترافي يوفر تجربة مشاهدة مستقرة
+ بدون تقطيع، جودة عالية، ومحتوى ترفيهي متكامل
+ يناسب جميع الأجهزة.
+ </p>
 
-  <a class="btn" href="https://wa.me/201098256570">اطلب تجربة مجانية</a>
- </div>
+ <ul class="features">
+  <li><i class="fa-solid fa-check"></i> بث ثابت وجودة عالية</li>
+  <li><i class="fa-solid fa-check"></i> قنوات رياضية وترفيهية</li>
+  <li><i class="fa-solid fa-check"></i> مكتبة أفلام ومسلسلات VOD</li>
+  <li><i class="fa-solid fa-check"></i> يعمل على جميع الأجهزة</li>
+  <li><i class="fa-solid fa-check"></i> تجربة مجانية قبل الاشتراك</li>
+ </ul>
 
- <img src="https://i.ibb.co/9gPZ5Zq/iptv-devices.png" class="hero-img" alt="IPTV Devices">
-</div>
+ <a href="https://wa.me/201098256570" class="btn">اطلب تجربة مجانية</a>
 </section>
 
-<!-- ABOUT SERVER -->
+<!-- ABOUT -->
 <section class="section">
-<h2>نبذة عن سيرفر TOP10IPTV</h2>
-
-<p>
-سيرفر <strong>TOP10IPTV</strong> هو سيرفر IPTV احترافي يعتمد على بنية قوية وسيرفرات مستقرة
-لتقديم بث عالي الجودة بدون تقطيع. نوفر محتوى شامل يشمل القنوات الرياضية،
-الترفيهية، الإخبارية، بالإضافة إلى مكتبة ضخمة من الأفلام والمسلسلات بنظام VOD.
-</p>
-
-<p>
-السيرفر يعمل بكفاءة داخل وخارج الوطن العربي، مع تحديث مستمر للمحتوى
-ودعم فني عربي متوفر على مدار الساعة لضمان أفضل تجربة مشاهدة.
-</p>
+ <h2>نبذة عن سيرفر TOP10IPTV</h2>
+ <p>
+ يعتمد سيرفر TOP10IPTV على بنية قوية وسيرفرات مستقرة
+ لضمان بث مستمر بجودة عالية داخل وخارج الوطن العربي.
+ يتم تحديث المحتوى باستمرار مع دعم فني عربي متوفر
+ على مدار الساعة.
+ </p>
 </section>
 
 <!-- STATS -->
 <section class="section">
-<h2>أرقام تثق فيها</h2>
-<div class="stats">
- <div class="stat"><div class="stat-num">15,000+</div>قناة عالمية</div>
- <div class="stat"><div class="stat-num">60,000+</div>فيلم ومسلسل</div>
- <div class="stat"><div class="stat-num">99.9%</div>استقرار السيرفر</div>
- <div class="stat"><div class="stat-num">24/7</div>دعم فني</div>
-</div>
+ <h2>أرقام تثق فيها</h2>
+ <div class="stats">
+  <div class="stat"><div class="stat-num">15,000+</div>قناة عالمية</div>
+  <div class="stat"><div class="stat-num">60,000+</div>فيلم ومسلسل</div>
+  <div class="stat"><div class="stat-num">99.9%</div>استقرار السيرفر</div>
+  <div class="stat"><div class="stat-num">24/7</div>دعم فني</div>
+ </div>
 </section>
 
 <!-- PAYMENT -->
 <section class="section">
-<h2>بوابة الدفع الآمن</h2>
-<div class="cards">
- <div class="card"><i class="fab fa-cc-visa payment-icon"></i><p>Visa</p></div>
- <div class="card"><i class="fab fa-cc-mastercard payment-icon"></i><p>Mastercard</p></div>
- <div class="card"><i class="fab fa-paypal payment-icon"></i><p>PayPal</p></div>
- <div class="card"><i class="fab fa-apple-pay payment-icon"></i><p>Apple Pay</p></div>
- <div class="card"><i class="fab fa-google-pay payment-icon"></i><p>Google Pay</p></div>
-</div>
+ <h2>بوابة الدفع الآمن</h2>
+ <div class="cards">
+  <div class="card"><i class="fab fa-cc-visa payment-icon"></i><p>Visa</p></div>
+  <div class="card"><i class="fab fa-cc-mastercard payment-icon"></i><p>Mastercard</p></div>
+  <div class="card"><i class="fab fa-paypal payment-icon"></i><p>PayPal</p></div>
+  <div class="card"><i class="fab fa-apple-pay payment-icon"></i><p>Apple Pay</p></div>
+  <div class="card"><i class="fab fa-google-pay payment-icon"></i><p>Google Pay</p></div>
+ </div>
 </section>
 
 <footer class="section">
-<p>© 2025 TOP10IPTV – جميع الحقوق محفوظة</p>
+ <p>© 2025 TOP10IPTV – جميع الحقوق محفوظة</p>
 </footer>
 
 </div>
