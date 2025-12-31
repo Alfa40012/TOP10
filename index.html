@@ -1,198 +1,282 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TOP10IPTV | اشتراك IPTV بدون تقطيع في مصر بجودة 4K</title>
+<title>اشتراك IPTV بدون تقطيع | TOP10 IPTV – أفضل سيرفر في مصر</title>
 
-<meta name="description" content="اشترك الآن في TOP10IPTV – أقوى سيرفر IPTV في مصر. قنوات رياضية مشفرة، أفلام ومسلسلات محدثة، جودة 4K، بدون تقطيع، دعم فني 24/7 وتفعيل فوري عبر الواتساب." />
-
-<meta name="keywords" content="TOP10IPTV, اشتراك IPTV, IPTV مصر, IPTV بدون تقطيع, سيرفر IPTV, قنوات مشفرة, اشتراك IPTV عربي, بث مباشر مباريات" />
-
-<meta name="author" content="TOP10IPTV Egypt" />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://top10.ooguy.com/" />
+<meta name="description" content="اشتراك IPTV بدون تقطيع من TOP10 IPTV. سيرفر مستقر 99.9%، قنوات مشفرة، أفلام ومسلسلات، دعم فني 24/7 وتجربة قبل الاشتراك.">
+<meta name="keywords" content="اشتراك IPTV, IPTV مصر, IPTV بدون تقطيع, سيرفر IPTV, اشتراك IPTV عربي">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://top10.ooguy.com/">
 
 <!-- Open Graph -->
-<meta property="og:title" content="TOP10IPTV | أقوى اشتراك IPTV بدون تقطيع" />
-<meta property="og:description" content="أفضل سيرفر IPTV في مصر – قنوات رياضية، أفلام ومسلسلات، جودة عالية وثبات كامل." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://top10.ooguy.com/" />
-<meta property="og:image" content="logo.png" />
-<meta property="og:locale" content="ar_EG" />
+<meta property="og:title" content="TOP10 IPTV | اشتراك IPTV بدون تقطيع">
+<meta property="og:description" content="أفضل اشتراك IPTV في مصر. مشاهدة مستقرة وقنوات مشفرة وجودة عالية.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://top10.ooguy.com/">
+<meta property="og:image" content="logo.png">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --gold:#d9a441;
+  --gold-light:#f5c76a;
+  --dark:#000;
+  --red:#4b0f0f;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Cairo',sans-serif;
+}
+
+body{
+  background:
+    radial-gradient(circle at top,var(--red),transparent 40%),
+    linear-gradient(180deg,#000,#111);
+  color:#fff;
+  line-height:1.9;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+header{
+  padding:80px 0 60px;
+  text-align:center;
+}
+
+.logo{
+  width:200px;
+  margin:auto;
+  animation:float 4s ease-in-out infinite;
+  filter:drop-shadow(0 20px 40px rgba(217,164,65,.5));
+}
+
+h1{
+  font-size:40px;
+  color:var(--gold);
+  margin:25px 0 15px;
+}
+
+header p{
+  font-size:20px;
+  color:#ddd;
+  max-width:800px;
+  margin:auto;
+}
+
+.cta{
+  display:inline-block;
+  margin-top:30px;
+  padding:15px 45px;
+  background:linear-gradient(45deg,var(--gold),var(--gold-light));
+  color:#000;
+  font-weight:900;
+  border-radius:40px;
+  transition:.3s;
+  text-decoration:none;
+}
+
+.cta:hover{
+  transform:scale(1.05);
+  box-shadow:0 20px 50px rgba(217,164,65,.6);
+}
+
+section{
+  padding:70px 0;
+}
+
+section h2{
+  text-align:center;
+  font-size:34px;
+  color:var(--gold);
+  margin-bottom:40px;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(217,164,65,.3);
+  border-radius:25px;
+  padding:30px;
+  text-align:center;
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 25px 60px rgba(217,164,65,.3);
+}
+
+.pricing{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+
+.price{
+  background:linear-gradient(180deg,#1a1a1a,#000);
+  border:2px solid var(--gold);
+  border-radius:30px;
+  padding:35px;
+  text-align:center;
+}
+
+.price h3{
+  font-size:26px;
+  color:var(--gold-light);
+}
+
+.price span{
+  font-size:46px;
+  font-weight:900;
+  color:var(--gold);
+  display:block;
+  margin:15px 0;
+}
+
+.price a{
+  display:block;
+  margin-top:25px;
+  padding:12px 35px;
+  background:var(--gold);
+  color:#000;
+  border-radius:30px;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.seo{
+  max-width:1000px;
+  margin:auto;
+  font-size:18px;
+  color:#ddd;
+  text-align:center;
+}
+
+footer{
+  background:#000;
+  text-align:center;
+  padding:35px;
+  color:#aaa;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-12px);}
+}
+
+@media(max-width:600px){
+  h1{font-size:28px;}
+}
+</style>
 
 <!-- Schema -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "TOP10IPTV",
-  "description": "اشتراك IPTV بدون تقطيع في مصر والوطن العربي",
-  "areaServed": "EG",
-  "offers": {
-    "@type": "Offer",
-    "price": "5",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
-  }
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "name":"TOP10 IPTV",
+  "description":"اشتراك IPTV بدون تقطيع في مصر",
+  "areaServed":"EG",
+  "offers":[
+    {"@type":"Offer","price":"5","priceCurrency":"USD"},
+    {"@type":"Offer","price":"25","priceCurrency":"USD"},
+    {"@type":"Offer","price":"45","priceCurrency":"USD"}
+  ]
 }
 </script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-
-<style>
-body{
-  font-family:'Cairo',sans-serif;
-  background:#0f0f0f;
-  color:#fff;
-}
-.navbar{
-  background:#000;
-}
-.navbar-brand span{color:#f5c76a;}
-.hero{
-  min-height:85vh;
-  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)),url("hero-img.jpg") center/cover;
-  display:flex;
-  align-items:center;
-  text-align:center;
-}
-.btn-red{
-  background:#d9a441;
-  color:#000;
-  font-weight:900;
-}
-.btn-red:hover{background:#f5c76a;}
-.feature-box{
-  background:#111;
-  border:1px solid #333;
-  border-radius:15px;
-  padding:30px;
-  transition:.3s;
-}
-.feature-box:hover{transform:translateY(-5px);}
-.pricing-section{background:#111;}
-footer{
-  background:#000;
-  border-top:4px solid #d9a441;
-}
-.whatsapp-float{
-  position:fixed;
-  bottom:30px;
-  left:30px;
-  background:#25d366;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:30px;
-  color:#fff;
-  z-index:999;
-}
-</style>
 </head>
-
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-<div class="container">
-<a class="navbar-brand" href="#">
-<i class="bi bi-play-circle-fill text-warning me-2"></i>
-TOP10<span>IPTV</span>
-</a>
-<a href="https://wa.me/201029020827" class="btn btn-red">اشترك الآن</a>
-</div>
-</nav>
+<header class="container">
+  <img src="logo.png" class="logo" alt="TOP10 IPTV اشتراك IPTV بدون تقطيع">
+  <h1>اشتراك IPTV بدون تقطيع في مصر</h1>
+  <p>
+    أفضل سيرفر IPTV لمشاهدة القنوات المشفرة والأفلام والمسلسلات
+    بجودة عالية وثبات كامل.
+  </p>
+  <a
+    href="https://wa.me/201098652570?text=السلام%20عليكم%20عايز%20استفسر%20عن%20الاشتراك"
+    class="cta"
+    target="_blank"
+    rel="noopener"
+  >
+    اشترك الآن عبر واتساب
+  </a>
+</header>
 
-<section class="hero">
-<div class="container">
-<p class="text-warning fw-bold">أقوى سيرفر IPTV في مصر</p>
-<h1 class="display-3 fw-bold">اشتراك TOP10IPTV بدون تقطيع</h1>
-<p class="lead text-secondary">
-قنوات رياضية مشفرة – أفلام ومسلسلات – جودة 4K – دعم فني 24/7
+<section class="container">
+<h2>مميزات سيرفر TOP10 IPTV</h2>
+<div class="features">
+  <div class="card">سيرفر ثابت 99.9%</div>
+  <div class="card">قنوات رياضية مشفرة</div>
+  <div class="card">أفلام ومسلسلات محدثة</div>
+  <div class="card">يعمل على جميع الأجهزة</div>
+  <div class="card">دعم فني 24/7</div>
+</div>
+</section>
+
+<section id="pricing" class="container">
+<h2>باقات الاشتراك</h2>
+<div class="pricing">
+
+  <div class="price">
+    <h3>شهر</h3>
+    <span>5$</span>
+    <a href="https://wa.me/201098652570?text=عايز%20اشتراك%20شهر%20IPTV" target="_blank">
+      اشترك الآن
+    </a>
+  </div>
+
+  <div class="price">
+    <h3>6 شهور</h3>
+    <span>25$</span>
+    <a href="https://wa.me/201098652570?text=عايز%20اشتراك%206%20شهور%20IPTV" target="_blank">
+      اشترك الآن
+    </a>
+  </div>
+
+  <div class="price">
+    <h3>سنة كاملة</h3>
+    <span>45$</span>
+    <a href="https://wa.me/201098652570?text=عايز%20اشتراك%20سنة%20IPTV" target="_blank">
+      اشترك الآن
+    </a>
+  </div>
+
+</div>
+</section>
+
+<section class="seo">
+<h2>لماذا TOP10 IPTV ؟</h2>
+<p>
+إذا كنت تبحث عن اشتراك IPTV بدون تقطيع،
+فإن TOP10 IPTV يوفر لك قنوات رياضية مشفرة،
+bein sports، أفلام ومسلسلات عربية وأجنبية،
+مع ثبات عالي أثناء المباريات وجودة تصل إلى 4K.
 </p>
-<a href="#pricing" class="btn btn-red btn-lg mt-4">شاهد الباقات</a>
-</div>
 </section>
 
-<section class="py-5">
-<div class="container">
-<div class="text-center mb-5">
-<h2 class="fw-bold">لماذا تختار TOP10IPTV ؟</h2>
-</div>
-<div class="row g-4">
-<div class="col-md-4">
-<div class="feature-box text-center">
-<i class="bi bi-speedometer2 fs-1 text-warning"></i>
-<h4 class="mt-3">ثبات عالي</h4>
-<p class="text-secondary">سيرفر مستقر أثناء المباريات والضغط.</p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="feature-box text-center">
-<i class="bi bi-collection-play fs-1 text-warning"></i>
-<h4 class="mt-3">محتوى ضخم</h4>
-<p class="text-secondary">آلاف القنوات والأفلام والمسلسلات.</p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="feature-box text-center">
-<i class="bi bi-headset fs-1 text-warning"></i>
-<h4 class="mt-3">دعم فني</h4>
-<p class="text-secondary">متوفر 24/7 عبر الواتساب.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section id="pricing" class="pricing-section py-5">
-<div class="container">
-<div class="text-center mb-5">
-<h2 class="fw-bold">باقات TOP10IPTV</h2>
-</div>
-<div class="row g-4 justify-content-center">
-<div class="col-md-4">
-<div class="feature-box text-center">
-<h4>شهر</h4>
-<h2 class="text-warning">$5</h2>
-<a href="https://wa.me/201029020827" class="btn btn-red w-100 mt-3">اشترك</a>
-</div>
-</div>
-<div class="col-md-4">
-<div class="feature-box text-center">
-<h4>6 شهور</h4>
-<h2 class="text-warning">$25</h2>
-<a href="https://wa.me/201029020827" class="btn btn-red w-100 mt-3">اشترك</a>
-</div>
-</div>
-<div class="col-md-4">
-<div class="feature-box text-center">
-<h4>سنة</h4>
-<h2 class="text-warning">$45</h2>
-<a href="https://wa.me/201029020827" class="btn btn-red w-100 mt-3">اشترك</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<footer class="py-4 text-center">
-<p class="mb-0 text-secondary">
-© 2025 TOP10IPTV – جميع الحقوق محفوظة
-</p>
+<footer>
+© 2025 TOP10 IPTV – جميع الحقوق محفوظة
 </footer>
 
-<a href="https://wa.me/201029020827" class="whatsapp-float">
-<i class="bi bi-whatsapp"></i>
-</a>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
