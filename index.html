@@ -5,87 +5,71 @@
   <title>AI Image Generator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Tailwind CDN -->
+  <!-- Tailwind CDN (لو مش مستخدم Tailwind محلي) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-
-    /* HERO BACKGROUND */
-    .hero {
+    .hero-bg {
       position: relative;
-      min-height: 100vh;
-      background-image: url("https://imgg.io/images/2024/09/Vi6RMb.jpg");
+      background-image: url("image-mg-1-header.jpg"); /* حط الصورة جنب الملف */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      min-height: 100vh;
     }
 
-    /* OVERLAY */
-    .hero::before {
+    .hero-bg::before {
       content: "";
       position: absolute;
       inset: 0;
       background: linear-gradient(
         135deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.3)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.25)
       );
-      backdrop-filter: blur(2px);
       z-index: 0;
     }
 
-    .content {
+    .hero-content {
       position: relative;
       z-index: 1;
     }
   </style>
 </head>
 
-<body class="text-white">
+<body class="bg-black text-white">
 
   <!-- HERO SECTION -->
-  <section class="hero flex items-center justify-center px-6">
-    <div class="content w-full max-w-5xl flex flex-col gap-10">
+  <div class="hero-bg flex items-center justify-center">
+    <div class="hero-content mx-auto flex min-h-[710px] max-w-6xl flex-col justify-center gap-10 p-6">
 
-      <!-- TOP BAR -->
-      <div class="flex items-center justify-center gap-3 rounded-full bg-black/40 px-6 py-3 text-sm">
-        <span class="rounded border border-white/50 px-2 py-0.5 uppercase text-xs">
-          New
-        </span>
-        <span class="hidden sm:block text-white/80">
+      <!-- TOP BADGE -->
+      <div class="flex items-center justify-center gap-3 rounded-full bg-black/30 px-6 py-3">
+        <span class="rounded border border-white/40 px-2 text-xs uppercase">New</span>
+        <p class="hidden sm:block text-sm">
           GPT 1.5: Get art-directed images with sharper consistency
-        </span>
+        </p>
       </div>
 
-      <!-- TITLE -->
-      <div class="text-center flex flex-col gap-4">
-        <h1 class="text-4xl font-semibold lg:text-6xl">
+      <!-- TEXT -->
+      <div class="text-center flex flex-col gap-6">
+        <h1 class="text-4xl font-normal lg:text-6xl">
           AI Image Generator
         </h1>
-        <p class="mx-auto max-w-2xl text-white/80 text-base">
-          Try the ultimate Image Generator. Access the most advanced AI models
-          and create AI images with just a prompt or an image reference.
+        <p class="mx-auto max-w-xl text-base text-white/80">
+          Try the ultimate Image Generator. Create stunning AI images using text or references.
         </p>
       </div>
 
       <!-- PROMPT BOX -->
-      <form class="mx-auto w-full max-w-xl rounded-3xl border border-white/20 bg-black/40 p-6 backdrop-blur-xl flex flex-col gap-5">
+      <form class="mx-auto w-full max-w-xl rounded-2xl border border-white/10 bg-black/40 p-5 backdrop-blur-xl flex flex-col gap-5">
 
         <textarea
           placeholder="Describe what you want to see"
-          class="min-h-[90px] w-full resize-none bg-transparent text-base outline-none placeholder:text-white/60"
+          class="min-h-[70px] w-full resize-none bg-transparent text-base outline-none placeholder:text-white/50"
         ></textarea>
 
-        <div class="flex items-center justify-between">
+        <div class="flex justify-between items-center">
           <button
             type="button"
             class="rounded-full bg-white/10 px-5 py-2 text-sm hover:bg-white/20 transition"
@@ -95,16 +79,16 @@
 
           <button
             type="submit"
-            class="rounded-full bg-white px-6 py-2 text-black font-semibold hover:bg-gray-200 transition"
+            class="rounded-full bg-white text-black p-3 hover:bg-gray-200 transition"
           >
-            Generate
+            ➤
           </button>
         </div>
 
       </form>
 
     </div>
-  </section>
+  </div>
 
 </body>
 </html>
