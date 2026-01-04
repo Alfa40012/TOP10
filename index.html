@@ -1,75 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8" />
   <title>AI Image Generator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Tailwind CDN (لو مش مستخدم Tailwind محلي) -->
+  <!-- SEO -->
+  <meta name="description" content="AI Image Generator – Create stunning images with AI easily" />
+  <meta property="og:title" content="AI Image Generator" />
+  <meta property="og:description" content="Create stunning images using AI with one prompt" />
+  <meta property="og:image" content="https://imgg.io/images/2024/09/Vi6RMb.jpg" />
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    .hero-bg {
-      position: relative;
-      background-image: url("image-mg-1-header.jpg"); /* حط الصورة جنب الملف */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #000;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background-image:
+        linear-gradient(
+          135deg,
+          rgba(0,0,0,0.65),
+          rgba(0,0,0,0.35)
+        ),
+        url("https://imgg.io/images/2024/09/Vi6RMb.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      min-height: 100vh;
     }
 
-    .hero-bg::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        135deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.25)
-      );
-      z-index: 0;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
+    .glass {
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.15);
     }
   </style>
 </head>
 
-<body class="bg-black text-white">
+<body class="text-white">
 
-  <!-- HERO SECTION -->
-  <div class="hero-bg flex items-center justify-center">
-    <div class="hero-content mx-auto flex min-h-[710px] max-w-6xl flex-col justify-center gap-10 p-6">
+  <!-- HERO -->
+  <section class="hero flex items-center justify-center px-6">
+    <div class="w-full max-w-5xl flex flex-col gap-12">
 
       <!-- TOP BADGE -->
-      <div class="flex items-center justify-center gap-3 rounded-full bg-black/30 px-6 py-3">
-        <span class="rounded border border-white/40 px-2 text-xs uppercase">New</span>
-        <p class="hidden sm:block text-sm">
-          GPT 1.5: Get art-directed images with sharper consistency
-        </p>
+      <div class="mx-auto flex items-center gap-3 rounded-full bg-black/40 px-6 py-3 text-sm">
+        <span class="rounded border border-white/50 px-2 py-0.5 uppercase text-xs">
+          New
+        </span>
+        <span class="hidden sm:block text-white/80">
+          GPT 1.5 – Sharper AI image generation
+        </span>
       </div>
 
-      <!-- TEXT -->
-      <div class="text-center flex flex-col gap-6">
-        <h1 class="text-4xl font-normal lg:text-6xl">
+      <!-- TITLE -->
+      <div class="text-center flex flex-col gap-4">
+        <h1 class="text-4xl font-semibold lg:text-6xl">
           AI Image Generator
         </h1>
-        <p class="mx-auto max-w-xl text-base text-white/80">
-          Try the ultimate Image Generator. Create stunning AI images using text or references.
+        <p class="mx-auto max-w-2xl text-white/80 text-base">
+          Create stunning AI-generated images using advanced models.
+          Just write a prompt and let AI do the magic.
         </p>
       </div>
 
       <!-- PROMPT BOX -->
-      <form class="mx-auto w-full max-w-xl rounded-2xl border border-white/10 bg-black/40 p-5 backdrop-blur-xl flex flex-col gap-5">
+      <form class="glass mx-auto w-full max-w-xl rounded-3xl p-6 flex flex-col gap-5">
 
         <textarea
-          placeholder="Describe what you want to see"
-          class="min-h-[70px] w-full resize-none bg-transparent text-base outline-none placeholder:text-white/50"
+          placeholder="Describe what you want to see..."
+          class="min-h-[90px] w-full resize-none bg-transparent text-base outline-none placeholder:text-white/60"
         ></textarea>
 
-        <div class="flex justify-between items-center">
+        <div class="flex items-center justify-between">
           <button
             type="button"
             class="rounded-full bg-white/10 px-5 py-2 text-sm hover:bg-white/20 transition"
@@ -79,16 +88,21 @@
 
           <button
             type="submit"
-            class="rounded-full bg-white text-black p-3 hover:bg-gray-200 transition"
+            class="rounded-full bg-white px-6 py-2 text-black font-semibold hover:bg-gray-200 transition"
           >
-            ➤
+            Generate
           </button>
         </div>
 
       </form>
 
+      <!-- FOOTER -->
+      <p class="text-center text-xs text-white/50">
+        © 2026 AI Image Generator. All rights reserved.
+      </p>
+
     </div>
-  </div>
+  </section>
 
 </body>
 </html>
