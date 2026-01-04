@@ -3,293 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TOP10 IPTV 2026 | أقوى اشتراك IPTV</title>
-<meta name="description" content="اشترك في أقوى سيرفر IPTV داخل مصر وجميع دول العالم. بث مباشر، أفلام ومسلسلات 4K بدون تقطيع. تفعيل فوري عبر واتساب.">
-<meta name="keywords" content="TOP10 IPTV, اشتراك توب تين, iptv مصر, iptv عالمي">
-
-<!-- Favicon -->
-<link rel="icon" href="https://b.top4top.io/p_3656quxeh0.png">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<title>TOP10 IPTV | أقوى اشتراك IPTV</title>
+<link rel="icon" href="https://j.top4top.io/p_3656jn60d1.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-
 <style>
-:root{
---red:#d60000;
---gold:#ffd700;
---dark:#0b0b0b;
---card:#141414;
+:root {
+  --red: #d60000;
+  --gold: #e5c15a;
+  --dark: #0b0b0b;
+  --card: rgba(0,0,0,0.7);
 }
-
-body{
-font-family:'Cairo',sans-serif;
-background: url('https://b.top4top.io/p_3656quxeh0.png') center/cover no-repeat;
-background-attachment: fixed;
-color:#fff;
-overflow-x:hidden;
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Cairo', sans-serif;
+  background: url('https://j.top4top.io/p_3656jn60d1.jpg') center/cover no-repeat fixed;
+  color: #fff;
+  overflow-x: hidden;
 }
-
-/* NAVBAR */
-.navbar{
-background:rgba(0,0,0,.9);
-border-bottom:1px solid #222;
+.navbar {
+  background: rgba(0,0,0,.85);
+  border-bottom: 1px solid #222;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
-.logo-wrap{
-width:55px;height:55px;border-radius:50%;
-padding:3px;
-background:linear-gradient(45deg,var(--gold),var(--red));
-animation:glow 3s infinite;
+.navbar .logo img {
+  height: 50px;
+  border-radius: 50%;
 }
-.logo-wrap img{
-width:100%;height:100%;border-radius:50%;
+.btn-gold {
+  background: linear-gradient(45deg, #e5c15a, #d60000);
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s;
 }
-@keyframes glow{
-0%{box-shadow:0 0 10px rgba(255,215,0,.5)}
-50%{box-shadow:0 0 30px rgba(255,215,0,1)}
-100%{box-shadow:0 0 10px rgba(255,215,0,.5)}
+.btn-gold:hover { transform: scale(1.05); box-shadow: 0 0 15px #e5c15a; }
+.hero {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background: rgba(0,0,0,0.55);
 }
-
-/* HERO */
-.hero{
-min-height:95vh;
-background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)), url('https://b.top4top.io/p_3656quxeh0.png') center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:0 20px;
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
 }
-.hero h1{font-weight:900;font-size:3.5rem;margin-bottom:15px;}
-.dynamic-text{color:var(--gold); font-weight:700;}
-
-/* BUTTONS */
-.btn-red{
-background: linear-gradient(45deg, #ffd700, #e5c15a);
-color:#000;
-font-weight:700;
-padding:12px 35px;
-border-radius:10px;
-border:none;
-transition: all 0.3s;
+.hero p {
+  font-size: 1.3rem;
+  margin: 20px 0;
 }
-.btn-red:hover{
-transform: scale(1.05);
-background: linear-gradient(90deg, #fff176, #ffca28);
+.dynamic-text { color: #e5c15a; font-weight: 700; }
+.offers {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-
-/* FEATURES */
-.features{padding:90px 0;background:rgba(0,0,0,.7);}
-.feature-card{
-background:var(--card);
-border:1px solid #222;
-border-radius:15px;
-padding:35px;
-height:100%;
-transition:.3s;
-text-align:center;
+.offer-card {
+  background: var(--card);
+  border: 2px solid #e5c15a;
+  border-radius: 20px;
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s;
+  box-shadow: 0 0 20px rgba(229,193,90,0.5);
 }
-.feature-card:hover{
-transform:translateY(-8px);
-border-color:var(--gold);
+.offer-card::before {
+  content: '';
+  position: absolute;
+  top: -5px; left: -5px; right: -5px; bottom: -5px;
+  border-radius: 22px;
+  background: linear-gradient(270deg, #e5c15a, #d60000, #e5c15a);
+  background-size: 600% 600%;
+  animation: glow 6s ease infinite;
+  z-index: -1;
 }
-.feature-card i{
-font-size:3rem;
-color:var(--gold);
-margin-bottom:15px;
+@keyframes glow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
-
-/* OFFERS */
-.offers{
-padding:80px 0;
-background:rgba(0,0,0,.6);
+.offer-card h3 { font-size: 1.5rem; margin-bottom: 20px; }
+.offer-card .price { font-size: 2rem; font-weight: 900; margin-bottom: 25px; color: #e5c15a; }
+.payment-section {
+  padding: 70px 20px;
+  text-align: center;
 }
-.offer-box{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-max-width:1000px;
-margin:auto;
+.payment-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
 }
-.offer-card{
-background:rgba(15,15,15,0.95);
-border-radius:20px;
-padding:35px;
-text-align:center;
-position:relative;
-transition: all 0.4s ease;
-border: 4px solid transparent;
-animation: glowBorder 3s infinite;
-cursor:pointer;
+.payment-logos img {
+  height: 45px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(45deg, #e5c15a, #d60000);
 }
-.offer-card:hover{
-transform: translateY(-10px) scale(1.03);
+.payment-logos img:hover { transform: scale(1.1); box-shadow: 0 0 15px #e5c15a; }
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  animation: pulse 2s infinite;
 }
-@keyframes glowBorder{
-0%,100%{border-color: #ffd700}
-50%{border-color: #fff176}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
-.offer-card h3{margin-bottom:15px;}
-.offer-price{
-font-size:2.8rem;
-font-weight:900;
-color:var(--gold);
-margin:15px 0;
-}
-.offer-text{
-font-size:1rem;
-color:#ccc;
-margin-bottom:15px;
-}
-
-/* PAYMENTS */
-.payments{text-align:center; padding:60px 20px;}
-.payment-logos{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
-}
-.payment-logos img{
-height:50px;
-margin:8px 12px;
-transition: all 0.3s ease;
-cursor:pointer;
-border-radius:10px;
-animation: glowPayment 2s infinite alternate;
-}
-.payment-logos img:hover{
-transform: scale(1.2) rotate(-5deg);
-filter: brightness(1.3);
-}
-@keyframes glowPayment{
-0%{box-shadow: 0 0 5px rgba(255,215,0,0.4);}
-100%{box-shadow: 0 0 20px rgba(255,215,0,0.9);}
-}
-
-/* FOOTER */
-footer{
-background:#000;
-border-top:4px solid var(--red);
-padding:50px 0 20px;
-text-align:center;
-}
-
-/* WHATSAPP */
-.whatsapp-float{
-position:fixed;
-bottom:25px;
-left:25px;
-width:60px;height:60px;
-background:#25d366;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-color:#fff;
-animation:pulse 2s infinite;
-z-index:999;
-}
-@keyframes pulse{
-0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}
-70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}
-100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
-}
-
-/* MEDIA QUERIES */
-@media (max-width:768px){
-.hero h1{font-size:2.5rem;}
-.dynamic-text{font-size:1.2rem;}
-.offer-card{padding:25px;}
-.offer-price{font-size:2rem;}
+footer {
+  background: rgba(0,0,0,0.9);
+  text-align: center;
+  padding: 40px 20px;
+  color: #777;
 }
 </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-dark fixed-top">
-<div class="container">
-<a class="navbar-brand d-flex align-items-center gap-2" href="#">
-<div class="logo-wrap">
-<img src="https://b.top4top.io/p_3656quxeh0.png">
-</div>
-<strong>TOP10 <span style="color:var(--gold)">IPTV</span></strong>
-</a>
-<a href="https://wa.me/201098256570" class="btn btn-red">اشترك الآن</a>
-</div>
+<nav class="navbar">
+  <div class="logo"><img src="https://j.top4top.io/p_3656jn60d1.jpg" alt="TOP10 IPTV"></div>
+  <a href="https://top10.ooguy.com/" class="btn-gold">الموقع الرسمي</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-<div class="container">
-<p class="text-warning fw-bold dynamic-text" id="dynamicText">قنوات رياضية • أفلام • مسلسلات</p>
-<h1>اشتراك سيرفر توب تين الأصلي</h1>
-<p>جودة 4K بدون تقطيع • دعم فني 24/7</p>
-<a href="#offers" class="btn btn-red btn-lg mt-4">شوف العروض</a>
-</div>
+  <div>
+    <p class="dynamic-text" id="dynamicText">قنوات رياضية • أفلام • مسلسلات</p>
+    <h1>اشتراك TOP10 IPTV الأصلي</h1>
+    <p>جودة 4K بدون تقطيع • دعم فني 24/7</p>
+    <a href="#offers" class="btn-gold">شوف العروض</a>
+  </div>
 </section>
 
-<!-- OFFERS -->
-<section id="offers" class="offers">
-<div class="container">
-<div class="text-center mb-5"><h2 class="fw-bold">🔥 العروض 🔥</h2></div>
-<div class="offer-box">
+<section class="offers" id="offers">
+  <div class="offer-card">
+    <h3>اشتراك سنة داخل مصر 🇪🇬</h3>
+    <div class="price">500 جنيه</div>
+    <p>شاهد أفضل القنوات الرياضية والأفلام والمسلسلات بجودة عالية بدون تقطيع.</p>
+    <a href="https://wa.me/201098256570?text=عايز%20اشتراك%20سنة%20داخل%20مصر" class="btn-gold">اشترك الآن</a>
+  </div>
 
-<div class="offer-card">
-<h3>اشتراك سنة داخل مصر 🇪🇬</h3>
-<div class="offer-price">500 جنيه</div>
-<p class="offer-text">أفلام ومسلسلات وقنوات رياضية عالية الجودة، تفعيل فوري عبر واتساب.</p>
-<a href="https://wa.me/201098256570?text=عايز%20اشتراك%20سنة%20داخل%20مصر" class="btn btn-red w-100">اشترك الآن</a>
-</div>
-
-<div class="offer-card">
-<h3>اشتراك سنة لجميع دول العالم 🌍</h3>
-<div class="offer-price">$30</div>
-<p class="offer-text">استمتع بمحتوى عالمي بجودة عالية بدون تقطيع. دعم فني 24/7.</p>
-<a href="https://wa.me/201098256570?text=عايز%20اشتراك%20سنة%20دولي" class="btn btn-red w-100">اشترك الآن</a>
-</div>
-
-</div>
-</div>
+  <div class="offer-card">
+    <h3>اشتراك سنة لجميع دول العالم 🌍</h3>
+    <div class="price">$30</div>
+    <p>تمتع بمحتوى عالمي شامل من أفلام ومسلسلات وقنوات رياضية مباشرة.</p>
+    <a href="https://wa.me/201098256570?text=عايز%20اشتراك%20سنة%20دولي" class="btn-gold">اشترك الآن</a>
+  </div>
 </section>
 
-<!-- PAYMENT METHODS -->
-<section class="payments">
-<h5>طرق الدفع المتاحة</h5>
-<div class="payment-logos mt-3">
-<a href="https://wa.me/201098256570"><img src="https://f.top4top.io/p_3656dwy0n8.png" alt="Vodafone Cash"></a>
-<a href="https://wa.me/201098256570"><img src="https://b.top4top.io/p_36569ec5j5.png" alt="Fawry"></a>
-<a href="https://wa.me/201098256570"><img src="https://a.top4top.io/p_36562zkl84.png" alt="Instapay"></a>
-<a href="https://wa.me/201098256570"><img src="https://l.top4top.io/p_3656tzogb3.png" alt="Telda"></a>
-<a href="https://wa.me/201098256570"><img src="https://k.top4top.io/p_36567wtci2.png" alt="PayPal"></a>
-<a href="https://wa.me/201098256570"><img src="https://j.top4top.io/p_3656nk0ry1.png" alt="Visa"></a>
-<a href="https://wa.me/201098256570"><img src="https://e.top4top.io/p_36565nw1d7.jpg" alt="Mastercard"></a>
-<a href="https://wa.me/201098256570"><img src="https://c.top4top.io/p_3656jrfca6.jpg" alt="Other"></a>
-</div>
+<section class="payment-section">
+  <h3>طرق الدفع المتاحة</h3>
+  <div class="payment-logos">
+    <img src="https://f.top4top.io/p_3656dwy0n8.png" alt="Vodafone Cash">
+    <img src="https://b.top4top.io/p_36569ec5j5.png" alt="Fawry">
+    <img src="https://a.top4top.io/p_36562zkl84.png" alt="Instapay">
+    <img src="https://l.top4top.io/p_3656tzogb3.png" alt="Telda">
+    <img src="https://k.top4top.io/p_36567wtci2.png" alt="PayPal">
+    <img src="https://j.top4top.io/p_3656nk0ry1.png" alt="Visa">
+    <img src="https://e.top4top.io/p_36565nw1d7.jpg" alt="Mastercard">
+    <img src="https://c.top4top.io/p_3656jrfca6.jpg" alt="Other">
+  </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-<p class="text-secondary">© 2026 TOP10 IPTV – جميع الحقوق محفوظة</p>
+  © 2026 TOP10 IPTV – جميع الحقوق محفوظة
 </footer>
 
-<!-- WhatsApp Float -->
-<a href="https://wa.me/201098256570" class="whatsapp-float">
-<i class="bi bi-whatsapp"></i>
-</a>
+<a href="https://wa.me/201098256570" class="whatsapp">✆</a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Dynamic Text Script -->
 <script>
-const texts = ["قنوات رياضية • أفلام • مسلسلات","جودة 4K بدون تقطيع","دعم فني 24/7"];
+const texts = [
+  'قنوات رياضية • أفلام • مسلسلات',
+  'جودة 4K بدون تقطيع',
+  'دعم فني 24/7'
+];
 let index = 0;
-setInterval(()=>{
-document.getElementById("dynamicText").textContent = texts[index];
-index = (index + 1) % texts.length;
-},3000);
+const dynamicText = document.getElementById('dynamicText');
+setInterval(() => {
+  index = (index + 1) % texts.length;
+  dynamicText.textContent = texts[index];
+}, 3000);
 </script>
 
 </body>
